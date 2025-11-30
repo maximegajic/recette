@@ -1,0 +1,34 @@
+[
+    {
+      "id": 1,
+      "titre": "Soupe de carottes au cumin",
+      "ingredients": ["carottes", "oignon", "pommes de terre", "cumin", "bouillon de légumes", "crème liquide"],
+      "instructions": "Éplucher et couper les légumes. Faire revenir l'oignon. Ajouter carottes et pommes de terre. Couvrir de bouillon. Cuire 25min. Mixer avec la crème et le cumin.",
+      "temps": "35m",
+      "type": "Entrée"
+    },
+    {
+      "id": 2,
+      "titre": "Pâtes Carbonara (La vraie)",
+      "ingredients": ["spaghetti", "oeufs", "pecorino", "guanciale", "poivre noir"],
+      "instructions": "Cuire les pâtes al dente. Faire revenir le guanciale. Mélanger oeufs et fromage. Mélanger les pâtes avec le guanciale hors du feu, puis ajouter le mélange d'oeufs pour créer une crème onctueuse.",
+      "temps": "20m",
+      "type": "Plat principal"
+    },
+    {
+      "id": 3,
+      "titre": "Salade de Quinoa Avocat",
+      "ingredients": ["quinoa", "avocat", "tomates cerises", "citron", "huile d'olive", "menthe"],
+      "instructions": "Cuire le quinoa et laisser refroidir. Couper avocat et tomates. Mélanger le tout avec jus de citron, huile et menthe ciselée.",
+      "temps": "15m",
+      "type": "Vegan"
+    },
+    {
+      "id": 4,
+      "titre": "Omelette rapide aux champignons",
+      "ingredients": ["oeufs", "champignons de paris", "persil", "beurre", "sel", "poivre"],
+      "instructions": "Faire sauter les champignons émincés. Battre les oeufs. Verser sur les champignons. Cuire selon préférence (baveuse ou bien cuite).",
+      "temps": "10m",
+      "type": "Rapide"
+    }
+  ]
