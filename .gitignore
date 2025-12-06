@@ -1,0 +1,27 @@
+Ignore les modèles lourds (ton ami utilisera download_model.py)
+
+models/
+my_model/
+
+Ignore les environnements virtuels python
+
+venv/
+env/
+.env
+
+Ignore les fichiers cache de Python
+
+pycache/
+*.pyc
+
+Ignore l'index binaire (il sera régénéré au lancement)
+
+data/faiss_index.bin
+data/metadata.pkl
+
+(Optionnel) Tu peux laisser recettes.json s'il fait < 100Mo
+
+Si tu veux qu'il le régénère lui-même, décommente la ligne suivante :
+
+data/recettes.json
+

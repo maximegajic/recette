@@ -1,34 +1,3929 @@
 [
-    {
-      "id": 1,
-      "titre": "Soupe de carottes au cumin",
-      "ingredients": ["carottes", "oignon", "pommes de terre", "cumin", "bouillon de légumes", "crème liquide"],
-      "instructions": "Éplucher et couper les légumes. Faire revenir l'oignon. Ajouter carottes et pommes de terre. Couvrir de bouillon. Cuire 25min. Mixer avec la crème et le cumin.",
-      "temps": "35m",
-      "type": "Entrée"
-    },
-    {
-      "id": 2,
-      "titre": "Pâtes Carbonara (La vraie)",
-      "ingredients": ["spaghetti", "oeufs", "pecorino", "guanciale", "poivre noir"],
-      "instructions": "Cuire les pâtes al dente. Faire revenir le guanciale. Mélanger oeufs et fromage. Mélanger les pâtes avec le guanciale hors du feu, puis ajouter le mélange d'oeufs pour créer une crème onctueuse.",
-      "temps": "20m",
-      "type": "Plat principal"
-    },
-    {
-      "id": 3,
-      "titre": "Salade de Quinoa Avocat",
-      "ingredients": ["quinoa", "avocat", "tomates cerises", "citron", "huile d'olive", "menthe"],
-      "instructions": "Cuire le quinoa et laisser refroidir. Couper avocat et tomates. Mélanger le tout avec jus de citron, huile et menthe ciselée.",
-      "temps": "15m",
-      "type": "Vegan"
-    },
-    {
-      "id": 4,
-      "titre": "Omelette rapide aux champignons",
-      "ingredients": ["oeufs", "champignons de paris", "persil", "beurre", "sel", "poivre"],
-      "instructions": "Faire sauter les champignons émincés. Battre les oeufs. Verser sur les champignons. Cuire selon préférence (baveuse ou bien cuite).",
-      "temps": "10m",
-      "type": "Rapide"
-    }
-  ]
+  {
+    "titre": "Pâtes Carbonara (La vraie)",
+    "ingredients": [
+      "spaghetti",
+      "oeufs",
+      "pecorino",
+      "guanciale",
+      "poivre noir"
+    ],
+    "instructions": "Cuire les pâtes al dente. Faire revenir le guanciale. Mélanger oeufs et fromage. Mélanger le tout hors du feu.",
+    "temps": "20m",
+    "difficulte": "Moyen",
+    "prix": "Moyen",
+    "calories": "Élevé",
+    "id": 1
+  },
+  {
+    "titre": "Soupe de carottes au cumin",
+    "ingredients": [
+      "carottes",
+      "oignon",
+      "pommes de terre",
+      "cumin",
+      "crème"
+    ],
+    "instructions": "Cuire les légumes dans l'eau bouillante. Mixer avec la crème et le cumin.",
+    "temps": "35m",
+    "difficulte": "Facile",
+    "prix": "Bon marché",
+    "calories": "Faible",
+    "id": 2
+  },
+  {
+    "titre": "Boeuf Bourguignon",
+    "ingredients": [
+      "boeuf",
+      "vin rouge",
+      "carottes",
+      "oignons",
+      "champignons",
+      "lardons"
+    ],
+    "instructions": "Faire mariner le boeuf. Saisir la viande. Mijoter 3h avec le vin et les légumes.",
+    "temps": "3h",
+    "difficulte": "Difficile",
+    "prix": "Cher",
+    "calories": "Élevé",
+    "id": 3
+  },
+  {
+    "titre": "Salade César",
+    "ingredients": [
+      "laitue",
+      "poulet",
+      "parmesan",
+      "croutons",
+      "sauce césar",
+      "anchois"
+    ],
+    "instructions": "Griller le poulet. Laver la salade. Assembler avec la sauce et les copeaux de parmesan.",
+    "temps": "20m",
+    "difficulte": "Facile",
+    "prix": "Moyen",
+    "calories": "Moyen",
+    "id": 4
+  },
+  {
+    "titre": "Curry de Légumes Vegan",
+    "ingredients": [
+      "chou-fleur",
+      "pois chiches",
+      "lait de coco",
+      "curry",
+      "riz"
+    ],
+    "instructions": "Faire revenir les épices. Ajouter légumes et lait de coco. Servir avec du riz.",
+    "temps": "30m",
+    "difficulte": "Facile",
+    "prix": "Bon marché",
+    "calories": "Moyen",
+    "id": 5
+  },
+  {
+    "titre": "Omelette aux fines herbes",
+    "ingredients": [
+      "oeufs",
+      "beurre",
+      "ciboulette",
+      "persil",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "Battre les oeufs avec les herbes. Cuire dans une poêle beurrée.",
+    "temps": "10m",
+    "difficulte": "Facile",
+    "prix": "Bon marché",
+    "calories": "Moyen",
+    "id": 6
+  },
+  {
+    "titre": "Pizza Margherita Maison",
+    "ingredients": [
+      "pâte à pizza",
+      "sauce tomate",
+      "mozzarella",
+      "basilic",
+      "huile d'olive"
+    ],
+    "instructions": "Etaler la pâte. Garnir. Cuire au four très chaud (250°C) pendant 10-12 min.",
+    "temps": "25m",
+    "difficulte": "Moyen",
+    "prix": "Bon marché",
+    "calories": "Élevé",
+    "id": 7
+  },
+  {
+    "titre": "Poulet Rôti du Dimanche",
+    "ingredients": [
+      "poulet entier",
+      "beurre",
+      "ail",
+      "thym",
+      "pommes de terre"
+    ],
+    "instructions": "Beurrer le poulet. Enfourner 1h30 à 200°C avec les pommes de terre autour.",
+    "temps": "1h30",
+    "difficulte": "Moyen",
+    "prix": "Moyen",
+    "calories": "Moyen",
+    "id": 8
+  },
+  {
+    "titre": "Chili con Carne",
+    "ingredients": [
+      "boeuf haché",
+      "haricots rouges",
+      "tomates",
+      "oignon",
+      "piment",
+      "riz"
+    ],
+    "instructions": "Mijoter la viande avec les épices et les tomates. Ajouter les haricots à la fin.",
+    "temps": "45m",
+    "difficulte": "Facile",
+    "prix": "Bon marché",
+    "calories": "Élevé",
+    "id": 9
+  },
+  {
+    "titre": "Quiche Lorraine",
+    "ingredients": [
+      "pâte brisée",
+      "oeufs",
+      "crème fraîche",
+      "lardons",
+      "muscade"
+    ],
+    "instructions": "Etaler la pâte. Mélanger oeufs et crème. Verser sur les lardons. Cuire 30 min.",
+    "temps": "45m",
+    "difficulte": "Facile",
+    "prix": "Bon marché",
+    "calories": "Élevé",
+    "id": 10
+  },
+  {
+    "titre": "Risotto aux Champignons",
+    "ingredients": [
+      "riz arborio",
+      "champignons",
+      "vin blanc",
+      "bouillon",
+      "parmesan"
+    ],
+    "instructions": "Nacrer le riz. Ajouter le bouillon louche par louche en remuant constamment.",
+    "temps": "40m",
+    "difficulte": "Difficile",
+    "prix": "Moyen",
+    "calories": "Moyen",
+    "id": 11
+  },
+  {
+    "titre": "Tartiflette",
+    "ingredients": [
+      "pommes de terre",
+      "reblochon",
+      "lardons",
+      "oignons",
+      "crème"
+    ],
+    "instructions": "Cuire les patates. Faire revenir lardons/oignons. Mettre en plat, couvrir de reblochon. Gratin.",
+    "temps": "1h",
+    "difficulte": "Facile",
+    "prix": "Moyen",
+    "calories": "Extrême",
+    "id": 12
+  },
+  {
+    "titre": "Wok de Nouilles Sautées",
+    "ingredients": [
+      "nouilles chinoises",
+      "sauce soja",
+      "carottes",
+      "poivrons",
+      "poulet"
+    ],
+    "instructions": "Sauter les légumes et la viande à feu vif. Ajouter les nouilles cuites et la sauce.",
+    "temps": "15m",
+    "difficulte": "Facile",
+    "prix": "Bon marché",
+    "calories": "Faible",
+    "id": 13
+  },
+  {
+    "titre": "Ratatouille Provençale",
+    "ingredients": [
+      "courgettes",
+      "aubergines",
+      "poivrons",
+      "tomates",
+      "oignons",
+      "ail"
+    ],
+    "instructions": "Cuire chaque légume séparément puis mijoter tous ensemble 30 min.",
+    "temps": "1h",
+    "difficulte": "Moyen",
+    "prix": "Bon marché",
+    "calories": "Faible",
+    "id": 14
+  },
+  {
+    "titre": "Croque-Monsieur",
+    "ingredients": [
+      "pain de mie",
+      "jambon",
+      "comté",
+      "beurre",
+      "béchamel"
+    ],
+    "instructions": "Beurrer le pain. Assembler jambon/fromage. Gratiner au four.",
+    "temps": "15m",
+    "difficulte": "Facile",
+    "prix": "Bon marché",
+    "calories": "Élevé",
+    "id": 15
+  },
+  {
+    "titre": "Saumon en Papillote",
+    "ingredients": [
+      "pavé de saumon",
+      "citron",
+      "aneth",
+      "courgettes",
+      "huile d'olive"
+    ],
+    "instructions": "Mettre le tout dans du papier cuisson. Fermer hermétiquement. Cuire 20 min au four.",
+    "temps": "25m",
+    "difficulte": "Facile",
+    "prix": "Cher",
+    "calories": "Faible",
+    "id": 16
+  },
+  {
+    "titre": "Crêpes au Sucre",
+    "ingredients": [
+      "farine",
+      "lait",
+      "oeufs",
+      "beurre",
+      "sucre",
+      "rhum"
+    ],
+    "instructions": "Mélanger les ingrédients. Laisser reposer 1h. Cuire à la poêle chaude.",
+    "temps": "1h30",
+    "difficulte": "Moyen",
+    "prix": "Bon marché",
+    "calories": "Moyen",
+    "id": 17
+  },
+  {
+    "titre": "Tiramisu",
+    "ingredients": [
+      "mascarpone",
+      "oeufs",
+      "sucre",
+      "café",
+      "boudoirs",
+      "cacao"
+    ],
+    "instructions": "Monter les blancs. Mélanger jaunes/sucre/mascarpone. Tremper biscuits. Alterner les couches.",
+    "temps": "20m",
+    "difficulte": "Moyen",
+    "prix": "Moyen",
+    "calories": "Élevé",
+    "id": 18
+  },
+  {
+    "titre": "Dahl de Lentilles",
+    "ingredients": [
+      "lentilles corail",
+      "lait de coco",
+      "tomates concassées",
+      "curcuma",
+      "gingembre"
+    ],
+    "instructions": "Cuire les lentilles avec les épices et la tomate. Finir avec le coco.",
+    "temps": "25m",
+    "difficulte": "Facile",
+    "prix": "Bon marché",
+    "calories": "Moyen",
+    "id": 19
+  },
+  {
+    "titre": "Avocado Toast",
+    "ingredients": [
+      "pain complet",
+      "avocat",
+      "oeuf poché",
+      "piment",
+      "citron"
+    ],
+    "instructions": "Toaster le pain. Ecraser l'avocat avec citron. Poser l'oeuf dessus.",
+    "temps": "10m",
+    "difficulte": "Facile",
+    "prix": "Moyen",
+    "calories": "Moyen",
+    "id": 20
+  },
+  {
+    "id": 21,
+    "titre": "Pommes de terre au Poulet et Petits pois Mijoté",
+    "ingredients": [
+      "pommes de terre",
+      "poulet",
+      "petits pois",
+      "carottes",
+      "crème",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Petits pois et Carottes en morceaux. 2. Faire cuire Pommes de terre selon les instructions du paquet. 3. Dans une poêle, faire revenir Poulet avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Crème et laisser mijoter quelques instants. 6. Mélanger avec Pommes de terre et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Moyen",
+    "prix": "Bon marché",
+    "calories": "Moyen"
+  },
+  {
+    "id": 22,
+    "titre": "Quinoa au Oeufs et Champignons Frais",
+    "ingredients": [
+      "quinoa",
+      "oeufs",
+      "champignons",
+      "poivrons",
+      "crème",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Champignons et Poivrons en morceaux. 2. Faire cuire Quinoa selon les instructions du paquet. 3. Dans une poêle, faire revenir Oeufs avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Crème et laisser mijoter quelques instants. 6. Mélanger avec Quinoa et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Difficile",
+    "prix": "Bon marché",
+    "calories": "Faible"
+  },
+  {
+    "id": 23,
+    "titre": "Blé au Poulet et Courgettes Express",
+    "ingredients": [
+      "blé",
+      "poulet",
+      "courgettes",
+      "poivrons",
+      "crème",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Courgettes et Poivrons en morceaux. 2. Faire cuire Blé selon les instructions du paquet. 3. Dans une poêle, faire revenir Poulet avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Crème et laisser mijoter quelques instants. 6. Mélanger avec Blé et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Moyen",
+    "prix": "Cher",
+    "calories": "Faible"
+  },
+  {
+    "id": 24,
+    "titre": "Riz au Boeuf et Épinards Rôti",
+    "ingredients": [
+      "riz",
+      "boeuf",
+      "épinards",
+      "brocolis",
+      "pesto",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Épinards et Brocolis en morceaux. 2. Faire cuire Riz selon les instructions du paquet. 3. Dans une poêle, faire revenir Boeuf avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Pesto et laisser mijoter quelques instants. 6. Mélanger avec Riz et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Facile",
+    "prix": "Moyen",
+    "calories": "Faible"
+  },
+  {
+    "id": 25,
+    "titre": "Polenta au Lentilles et Courgettes Léger",
+    "ingredients": [
+      "polenta",
+      "lentilles",
+      "courgettes",
+      "épinards",
+      "beurre citron",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Courgettes et Épinards en morceaux. 2. Faire cuire Polenta selon les instructions du paquet. 3. Dans une poêle, faire revenir Lentilles avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Beurre Citron et laisser mijoter quelques instants. 6. Mélanger avec Polenta et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Moyen",
+    "prix": "Bon marché",
+    "calories": "Élevé"
+  },
+  {
+    "id": 26,
+    "titre": "Gnocchis au Porc et Petits pois Grillé",
+    "ingredients": [
+      "gnocchis",
+      "porc",
+      "petits pois",
+      "épinards",
+      "beurre citron",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Petits pois et Épinards en morceaux. 2. Faire cuire Gnocchis selon les instructions du paquet. 3. Dans une poêle, faire revenir Porc avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Beurre Citron et laisser mijoter quelques instants. 6. Mélanger avec Gnocchis et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Facile",
+    "prix": "Cher",
+    "calories": "Moyen"
+  },
+  {
+    "id": 27,
+    "titre": "Pommes de terre au Crevettes et Carottes Frais",
+    "ingredients": [
+      "pommes de terre",
+      "crevettes",
+      "carottes",
+      "brocolis",
+      "pesto",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Carottes et Brocolis en morceaux. 2. Faire cuire Pommes de terre selon les instructions du paquet. 3. Dans une poêle, faire revenir Crevettes avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Pesto et laisser mijoter quelques instants. 6. Mélanger avec Pommes de terre et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Moyen",
+    "prix": "Moyen",
+    "calories": "Faible"
+  },
+  {
+    "id": 28,
+    "titre": "Gnocchis au Crevettes et Champignons Gourmand",
+    "ingredients": [
+      "gnocchis",
+      "crevettes",
+      "champignons",
+      "carottes",
+      "huile d'olive",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Champignons et Carottes en morceaux. 2. Faire cuire Gnocchis selon les instructions du paquet. 3. Dans une poêle, faire revenir Crevettes avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Huile d'olive et laisser mijoter quelques instants. 6. Mélanger avec Gnocchis et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Moyen",
+    "prix": "Cher",
+    "calories": "Élevé"
+  },
+  {
+    "id": 29,
+    "titre": "Semoule au Tofu et Brocolis Épicé",
+    "ingredients": [
+      "semoule",
+      "tofu",
+      "brocolis",
+      "épinards",
+      "beurre citron",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Brocolis et Épinards en morceaux. 2. Faire cuire Semoule selon les instructions du paquet. 3. Dans une poêle, faire revenir Tofu avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Beurre Citron et laisser mijoter quelques instants. 6. Mélanger avec Semoule et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Difficile",
+    "prix": "Bon marché",
+    "calories": "Élevé"
+  },
+  {
+    "id": 30,
+    "titre": "Gnocchis au Crevettes et Aubergines Rôti",
+    "ingredients": [
+      "gnocchis",
+      "crevettes",
+      "aubergines",
+      "courgettes",
+      "huile d'olive",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Aubergines et Courgettes en morceaux. 2. Faire cuire Gnocchis selon les instructions du paquet. 3. Dans une poêle, faire revenir Crevettes avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Huile d'olive et laisser mijoter quelques instants. 6. Mélanger avec Gnocchis et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Difficile",
+    "prix": "Bon marché",
+    "calories": "Élevé"
+  },
+  {
+    "id": 31,
+    "titre": "Pâtes au Porc et Carottes Épicé",
+    "ingredients": [
+      "pâtes",
+      "porc",
+      "carottes",
+      "poivrons",
+      "sauce soja",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Carottes et Poivrons en morceaux. 2. Faire cuire Pâtes selon les instructions du paquet. 3. Dans une poêle, faire revenir Porc avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Soja et laisser mijoter quelques instants. 6. Mélanger avec Pâtes et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Difficile",
+    "prix": "Cher",
+    "calories": "Élevé"
+  },
+  {
+    "id": 32,
+    "titre": "Blé au Boeuf et Brocolis Grillé",
+    "ingredients": [
+      "blé",
+      "boeuf",
+      "brocolis",
+      "épinards",
+      "lait de coco",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Brocolis et Épinards en morceaux. 2. Faire cuire Blé selon les instructions du paquet. 3. Dans une poêle, faire revenir Boeuf avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Lait de Coco et laisser mijoter quelques instants. 6. Mélanger avec Blé et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Difficile",
+    "prix": "Bon marché",
+    "calories": "Élevé"
+  },
+  {
+    "id": 33,
+    "titre": "Semoule au Boeuf et Poivrons Épicé",
+    "ingredients": [
+      "semoule",
+      "boeuf",
+      "poivrons",
+      "haricots verts",
+      "huile d'olive",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Poivrons et Haricots verts en morceaux. 2. Faire cuire Semoule selon les instructions du paquet. 3. Dans une poêle, faire revenir Boeuf avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Huile d'olive et laisser mijoter quelques instants. 6. Mélanger avec Semoule et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Difficile",
+    "prix": "Moyen",
+    "calories": "Faible"
+  },
+  {
+    "id": 34,
+    "titre": "Semoule au Crevettes et Haricots verts Gourmand",
+    "ingredients": [
+      "semoule",
+      "crevettes",
+      "haricots verts",
+      "brocolis",
+      "huile d'olive",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Haricots verts et Brocolis en morceaux. 2. Faire cuire Semoule selon les instructions du paquet. 3. Dans une poêle, faire revenir Crevettes avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Huile d'olive et laisser mijoter quelques instants. 6. Mélanger avec Semoule et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Moyen",
+    "prix": "Cher",
+    "calories": "Faible"
+  },
+  {
+    "id": 35,
+    "titre": "Semoule au Saumon et Aubergines Sauté",
+    "ingredients": [
+      "semoule",
+      "saumon",
+      "aubergines",
+      "poivrons",
+      "lait de coco",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Aubergines et Poivrons en morceaux. 2. Faire cuire Semoule selon les instructions du paquet. 3. Dans une poêle, faire revenir Saumon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Lait de Coco et laisser mijoter quelques instants. 6. Mélanger avec Semoule et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Difficile",
+    "prix": "Cher",
+    "calories": "Faible"
+  },
+  {
+    "id": 36,
+    "titre": "Semoule au Porc et Poivrons Épicé",
+    "ingredients": [
+      "semoule",
+      "porc",
+      "poivrons",
+      "aubergines",
+      "sauce soja",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Poivrons et Aubergines en morceaux. 2. Faire cuire Semoule selon les instructions du paquet. 3. Dans une poêle, faire revenir Porc avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Soja et laisser mijoter quelques instants. 6. Mélanger avec Semoule et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Moyen",
+    "prix": "Bon marché",
+    "calories": "Moyen"
+  },
+  {
+    "id": 37,
+    "titre": "Blé au Porc et Poivrons Épicé",
+    "ingredients": [
+      "blé",
+      "porc",
+      "poivrons",
+      "haricots verts",
+      "crème",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Poivrons et Haricots verts en morceaux. 2. Faire cuire Blé selon les instructions du paquet. 3. Dans une poêle, faire revenir Porc avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Crème et laisser mijoter quelques instants. 6. Mélanger avec Blé et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Difficile",
+    "prix": "Cher",
+    "calories": "Faible"
+  },
+  {
+    "id": 38,
+    "titre": "Semoule au Crevettes et Poivrons Léger",
+    "ingredients": [
+      "semoule",
+      "crevettes",
+      "poivrons",
+      "épinards",
+      "sauce soja",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Poivrons et Épinards en morceaux. 2. Faire cuire Semoule selon les instructions du paquet. 3. Dans une poêle, faire revenir Crevettes avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Soja et laisser mijoter quelques instants. 6. Mélanger avec Semoule et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Difficile",
+    "prix": "Cher",
+    "calories": "Faible"
+  },
+  {
+    "id": 39,
+    "titre": "Blé au Haricots Rouges et Épinards Frais",
+    "ingredients": [
+      "blé",
+      "haricots rouges",
+      "épinards",
+      "carottes",
+      "sauce tomate",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Épinards et Carottes en morceaux. 2. Faire cuire Blé selon les instructions du paquet. 3. Dans une poêle, faire revenir Haricots Rouges avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Tomate et laisser mijoter quelques instants. 6. Mélanger avec Blé et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Moyen",
+    "prix": "Bon marché",
+    "calories": "Faible"
+  },
+  {
+    "id": 40,
+    "titre": "Blé au Crevettes et Courgettes Frais",
+    "ingredients": [
+      "blé",
+      "crevettes",
+      "courgettes",
+      "carottes",
+      "curry",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Courgettes et Carottes en morceaux. 2. Faire cuire Blé selon les instructions du paquet. 3. Dans une poêle, faire revenir Crevettes avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Curry et laisser mijoter quelques instants. 6. Mélanger avec Blé et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Difficile",
+    "prix": "Cher",
+    "calories": "Moyen"
+  },
+  {
+    "id": 41,
+    "titre": "Blé au Tofu et Haricots verts Express",
+    "ingredients": [
+      "blé",
+      "tofu",
+      "haricots verts",
+      "champignons",
+      "lait de coco",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Haricots verts et Champignons en morceaux. 2. Faire cuire Blé selon les instructions du paquet. 3. Dans une poêle, faire revenir Tofu avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Lait de Coco et laisser mijoter quelques instants. 6. Mélanger avec Blé et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Difficile",
+    "prix": "Bon marché",
+    "calories": "Élevé"
+  },
+  {
+    "id": 42,
+    "titre": "Blé au Porc et Carottes Frais",
+    "ingredients": [
+      "blé",
+      "porc",
+      "carottes",
+      "petits pois",
+      "sauce soja",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Carottes et Petits pois en morceaux. 2. Faire cuire Blé selon les instructions du paquet. 3. Dans une poêle, faire revenir Porc avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Soja et laisser mijoter quelques instants. 6. Mélanger avec Blé et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Facile",
+    "prix": "Bon marché",
+    "calories": "Élevé"
+  },
+  {
+    "id": 43,
+    "titre": "Pommes de terre au Poulet et Carottes Léger",
+    "ingredients": [
+      "pommes de terre",
+      "poulet",
+      "carottes",
+      "poivrons",
+      "sauce soja",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Carottes et Poivrons en morceaux. 2. Faire cuire Pommes de terre selon les instructions du paquet. 3. Dans une poêle, faire revenir Poulet avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Soja et laisser mijoter quelques instants. 6. Mélanger avec Pommes de terre et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Moyen",
+    "prix": "Cher",
+    "calories": "Moyen"
+  },
+  {
+    "id": 44,
+    "titre": "Gnocchis au Porc et Haricots verts Express",
+    "ingredients": [
+      "gnocchis",
+      "porc",
+      "haricots verts",
+      "poivrons",
+      "sauce tomate",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Haricots verts et Poivrons en morceaux. 2. Faire cuire Gnocchis selon les instructions du paquet. 3. Dans une poêle, faire revenir Porc avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Tomate et laisser mijoter quelques instants. 6. Mélanger avec Gnocchis et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Facile",
+    "prix": "Bon marché",
+    "calories": "Faible"
+  },
+  {
+    "id": 45,
+    "titre": "Quinoa au Thon et Champignons Léger",
+    "ingredients": [
+      "quinoa",
+      "thon",
+      "champignons",
+      "haricots verts",
+      "huile d'olive",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Champignons et Haricots verts en morceaux. 2. Faire cuire Quinoa selon les instructions du paquet. 3. Dans une poêle, faire revenir Thon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Huile d'olive et laisser mijoter quelques instants. 6. Mélanger avec Quinoa et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Difficile",
+    "prix": "Cher",
+    "calories": "Élevé"
+  },
+  {
+    "id": 46,
+    "titre": "Semoule au Thon et Courgettes Grillé",
+    "ingredients": [
+      "semoule",
+      "thon",
+      "courgettes",
+      "chou-fleur",
+      "sauce tomate",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Courgettes et Chou-fleur en morceaux. 2. Faire cuire Semoule selon les instructions du paquet. 3. Dans une poêle, faire revenir Thon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Tomate et laisser mijoter quelques instants. 6. Mélanger avec Semoule et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Difficile",
+    "prix": "Bon marché",
+    "calories": "Élevé"
+  },
+  {
+    "id": 47,
+    "titre": "Riz au Thon et Petits pois Gourmand",
+    "ingredients": [
+      "riz",
+      "thon",
+      "petits pois",
+      "champignons",
+      "lait de coco",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Petits pois et Champignons en morceaux. 2. Faire cuire Riz selon les instructions du paquet. 3. Dans une poêle, faire revenir Thon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Lait de Coco et laisser mijoter quelques instants. 6. Mélanger avec Riz et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Facile",
+    "prix": "Cher",
+    "calories": "Faible"
+  },
+  {
+    "id": 48,
+    "titre": "Gnocchis au Oeufs et Chou-fleur Frais",
+    "ingredients": [
+      "gnocchis",
+      "oeufs",
+      "chou-fleur",
+      "poivrons",
+      "huile d'olive",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Chou-fleur et Poivrons en morceaux. 2. Faire cuire Gnocchis selon les instructions du paquet. 3. Dans une poêle, faire revenir Oeufs avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Huile d'olive et laisser mijoter quelques instants. 6. Mélanger avec Gnocchis et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Facile",
+    "prix": "Moyen",
+    "calories": "Moyen"
+  },
+  {
+    "id": 49,
+    "titre": "Pommes de terre au Thon et Haricots verts Mijoté",
+    "ingredients": [
+      "pommes de terre",
+      "thon",
+      "haricots verts",
+      "chou-fleur",
+      "curry",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Haricots verts et Chou-fleur en morceaux. 2. Faire cuire Pommes de terre selon les instructions du paquet. 3. Dans une poêle, faire revenir Thon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Curry et laisser mijoter quelques instants. 6. Mélanger avec Pommes de terre et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Difficile",
+    "prix": "Cher",
+    "calories": "Élevé"
+  },
+  {
+    "id": 50,
+    "titre": "Gnocchis au Oeufs et Petits pois Frais",
+    "ingredients": [
+      "gnocchis",
+      "oeufs",
+      "petits pois",
+      "poivrons",
+      "beurre citron",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Petits pois et Poivrons en morceaux. 2. Faire cuire Gnocchis selon les instructions du paquet. 3. Dans une poêle, faire revenir Oeufs avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Beurre Citron et laisser mijoter quelques instants. 6. Mélanger avec Gnocchis et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Moyen",
+    "prix": "Bon marché",
+    "calories": "Faible"
+  },
+  {
+    "id": 51,
+    "titre": "Gnocchis au Thon et Haricots verts Mijoté",
+    "ingredients": [
+      "gnocchis",
+      "thon",
+      "haricots verts",
+      "petits pois",
+      "lait de coco",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Haricots verts et Petits pois en morceaux. 2. Faire cuire Gnocchis selon les instructions du paquet. 3. Dans une poêle, faire revenir Thon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Lait de Coco et laisser mijoter quelques instants. 6. Mélanger avec Gnocchis et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Difficile",
+    "prix": "Bon marché",
+    "calories": "Faible"
+  },
+  {
+    "id": 52,
+    "titre": "Blé au Saumon et Haricots verts Épicé",
+    "ingredients": [
+      "blé",
+      "saumon",
+      "haricots verts",
+      "poivrons",
+      "lait de coco",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Haricots verts et Poivrons en morceaux. 2. Faire cuire Blé selon les instructions du paquet. 3. Dans une poêle, faire revenir Saumon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Lait de Coco et laisser mijoter quelques instants. 6. Mélanger avec Blé et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Difficile",
+    "prix": "Cher",
+    "calories": "Élevé"
+  },
+  {
+    "id": 53,
+    "titre": "Blé au Oeufs et Champignons Express",
+    "ingredients": [
+      "blé",
+      "oeufs",
+      "champignons",
+      "aubergines",
+      "sauce tomate",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Champignons et Aubergines en morceaux. 2. Faire cuire Blé selon les instructions du paquet. 3. Dans une poêle, faire revenir Oeufs avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Tomate et laisser mijoter quelques instants. 6. Mélanger avec Blé et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Difficile",
+    "prix": "Bon marché",
+    "calories": "Faible"
+  },
+  {
+    "id": 54,
+    "titre": "Gnocchis au Saumon et Épinards Léger",
+    "ingredients": [
+      "gnocchis",
+      "saumon",
+      "épinards",
+      "aubergines",
+      "lait de coco",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Épinards et Aubergines en morceaux. 2. Faire cuire Gnocchis selon les instructions du paquet. 3. Dans une poêle, faire revenir Saumon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Lait de Coco et laisser mijoter quelques instants. 6. Mélanger avec Gnocchis et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Difficile",
+    "prix": "Moyen",
+    "calories": "Moyen"
+  },
+  {
+    "id": 55,
+    "titre": "Blé au Boeuf et Champignons Gourmand",
+    "ingredients": [
+      "blé",
+      "boeuf",
+      "champignons",
+      "petits pois",
+      "sauce tomate",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Champignons et Petits pois en morceaux. 2. Faire cuire Blé selon les instructions du paquet. 3. Dans une poêle, faire revenir Boeuf avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Tomate et laisser mijoter quelques instants. 6. Mélanger avec Blé et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Moyen",
+    "prix": "Bon marché",
+    "calories": "Élevé"
+  },
+  {
+    "id": 56,
+    "titre": "Riz au Crevettes et Champignons Gourmand",
+    "ingredients": [
+      "riz",
+      "crevettes",
+      "champignons",
+      "aubergines",
+      "curry",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Champignons et Aubergines en morceaux. 2. Faire cuire Riz selon les instructions du paquet. 3. Dans une poêle, faire revenir Crevettes avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Curry et laisser mijoter quelques instants. 6. Mélanger avec Riz et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Difficile",
+    "prix": "Moyen",
+    "calories": "Élevé"
+  },
+  {
+    "id": 57,
+    "titre": "Polenta au Haricots Rouges et Courgettes Mijoté",
+    "ingredients": [
+      "polenta",
+      "haricots rouges",
+      "courgettes",
+      "champignons",
+      "pesto",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Courgettes et Champignons en morceaux. 2. Faire cuire Polenta selon les instructions du paquet. 3. Dans une poêle, faire revenir Haricots Rouges avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Pesto et laisser mijoter quelques instants. 6. Mélanger avec Polenta et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Moyen",
+    "prix": "Cher",
+    "calories": "Moyen"
+  },
+  {
+    "id": 58,
+    "titre": "Pâtes au Poulet et Courgettes Express",
+    "ingredients": [
+      "pâtes",
+      "poulet",
+      "courgettes",
+      "aubergines",
+      "lait de coco",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Courgettes et Aubergines en morceaux. 2. Faire cuire Pâtes selon les instructions du paquet. 3. Dans une poêle, faire revenir Poulet avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Lait de Coco et laisser mijoter quelques instants. 6. Mélanger avec Pâtes et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Moyen",
+    "prix": "Bon marché",
+    "calories": "Moyen"
+  },
+  {
+    "id": 59,
+    "titre": "Riz au Crevettes et Poivrons Épicé",
+    "ingredients": [
+      "riz",
+      "crevettes",
+      "poivrons",
+      "aubergines",
+      "pesto",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Poivrons et Aubergines en morceaux. 2. Faire cuire Riz selon les instructions du paquet. 3. Dans une poêle, faire revenir Crevettes avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Pesto et laisser mijoter quelques instants. 6. Mélanger avec Riz et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Moyen",
+    "prix": "Cher",
+    "calories": "Élevé"
+  },
+  {
+    "id": 60,
+    "titre": "Blé au Oeufs et Brocolis Express",
+    "ingredients": [
+      "blé",
+      "oeufs",
+      "brocolis",
+      "petits pois",
+      "moutarde",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Brocolis et Petits pois en morceaux. 2. Faire cuire Blé selon les instructions du paquet. 3. Dans une poêle, faire revenir Oeufs avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Moutarde et laisser mijoter quelques instants. 6. Mélanger avec Blé et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Difficile",
+    "prix": "Bon marché",
+    "calories": "Faible"
+  },
+  {
+    "id": 61,
+    "titre": "Blé au Lentilles et Brocolis Léger",
+    "ingredients": [
+      "blé",
+      "lentilles",
+      "brocolis",
+      "épinards",
+      "pesto",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Brocolis et Épinards en morceaux. 2. Faire cuire Blé selon les instructions du paquet. 3. Dans une poêle, faire revenir Lentilles avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Pesto et laisser mijoter quelques instants. 6. Mélanger avec Blé et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Difficile",
+    "prix": "Moyen",
+    "calories": "Élevé"
+  },
+  {
+    "id": 62,
+    "titre": "Riz au Oeufs et Aubergines Sauté",
+    "ingredients": [
+      "riz",
+      "oeufs",
+      "aubergines",
+      "champignons",
+      "sauce tomate",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Aubergines et Champignons en morceaux. 2. Faire cuire Riz selon les instructions du paquet. 3. Dans une poêle, faire revenir Oeufs avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Tomate et laisser mijoter quelques instants. 6. Mélanger avec Riz et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Difficile",
+    "prix": "Cher",
+    "calories": "Faible"
+  },
+  {
+    "id": 63,
+    "titre": "Blé au Boeuf et Courgettes Mijoté",
+    "ingredients": [
+      "blé",
+      "boeuf",
+      "courgettes",
+      "brocolis",
+      "huile d'olive",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Courgettes et Brocolis en morceaux. 2. Faire cuire Blé selon les instructions du paquet. 3. Dans une poêle, faire revenir Boeuf avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Huile d'olive et laisser mijoter quelques instants. 6. Mélanger avec Blé et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Facile",
+    "prix": "Bon marché",
+    "calories": "Moyen"
+  },
+  {
+    "id": 64,
+    "titre": "Pommes de terre au Haricots Rouges et Chou-fleur Épicé",
+    "ingredients": [
+      "pommes de terre",
+      "haricots rouges",
+      "chou-fleur",
+      "champignons",
+      "crème",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Chou-fleur et Champignons en morceaux. 2. Faire cuire Pommes de terre selon les instructions du paquet. 3. Dans une poêle, faire revenir Haricots Rouges avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Crème et laisser mijoter quelques instants. 6. Mélanger avec Pommes de terre et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Facile",
+    "prix": "Moyen",
+    "calories": "Faible"
+  },
+  {
+    "id": 65,
+    "titre": "Polenta au Crevettes et Poivrons Crémeux",
+    "ingredients": [
+      "polenta",
+      "crevettes",
+      "poivrons",
+      "courgettes",
+      "sauce tomate",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Poivrons et Courgettes en morceaux. 2. Faire cuire Polenta selon les instructions du paquet. 3. Dans une poêle, faire revenir Crevettes avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Tomate et laisser mijoter quelques instants. 6. Mélanger avec Polenta et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Facile",
+    "prix": "Bon marché",
+    "calories": "Élevé"
+  },
+  {
+    "id": 66,
+    "titre": "Pommes de terre au Boeuf et Brocolis Express",
+    "ingredients": [
+      "pommes de terre",
+      "boeuf",
+      "brocolis",
+      "petits pois",
+      "lait de coco",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Brocolis et Petits pois en morceaux. 2. Faire cuire Pommes de terre selon les instructions du paquet. 3. Dans une poêle, faire revenir Boeuf avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Lait de Coco et laisser mijoter quelques instants. 6. Mélanger avec Pommes de terre et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Difficile",
+    "prix": "Moyen",
+    "calories": "Élevé"
+  },
+  {
+    "id": 67,
+    "titre": "Quinoa au Poulet et Courgettes Crémeux",
+    "ingredients": [
+      "quinoa",
+      "poulet",
+      "courgettes",
+      "petits pois",
+      "pesto",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Courgettes et Petits pois en morceaux. 2. Faire cuire Quinoa selon les instructions du paquet. 3. Dans une poêle, faire revenir Poulet avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Pesto et laisser mijoter quelques instants. 6. Mélanger avec Quinoa et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Facile",
+    "prix": "Cher",
+    "calories": "Élevé"
+  },
+  {
+    "id": 68,
+    "titre": "Blé au Thon et Chou-fleur Frais",
+    "ingredients": [
+      "blé",
+      "thon",
+      "chou-fleur",
+      "petits pois",
+      "moutarde",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Chou-fleur et Petits pois en morceaux. 2. Faire cuire Blé selon les instructions du paquet. 3. Dans une poêle, faire revenir Thon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Moutarde et laisser mijoter quelques instants. 6. Mélanger avec Blé et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Difficile",
+    "prix": "Moyen",
+    "calories": "Élevé"
+  },
+  {
+    "id": 69,
+    "titre": "Blé au Saumon et Champignons Grillé",
+    "ingredients": [
+      "blé",
+      "saumon",
+      "champignons",
+      "poivrons",
+      "sauce soja",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Champignons et Poivrons en morceaux. 2. Faire cuire Blé selon les instructions du paquet. 3. Dans une poêle, faire revenir Saumon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Soja et laisser mijoter quelques instants. 6. Mélanger avec Blé et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Difficile",
+    "prix": "Moyen",
+    "calories": "Moyen"
+  },
+  {
+    "id": 70,
+    "titre": "Riz au Porc et Aubergines Mijoté",
+    "ingredients": [
+      "riz",
+      "porc",
+      "aubergines",
+      "poivrons",
+      "pesto",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Aubergines et Poivrons en morceaux. 2. Faire cuire Riz selon les instructions du paquet. 3. Dans une poêle, faire revenir Porc avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Pesto et laisser mijoter quelques instants. 6. Mélanger avec Riz et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Difficile",
+    "prix": "Bon marché",
+    "calories": "Élevé"
+  },
+  {
+    "id": 71,
+    "titre": "Semoule au Saumon et Épinards Mijoté",
+    "ingredients": [
+      "semoule",
+      "saumon",
+      "épinards",
+      "haricots verts",
+      "huile d'olive",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Épinards et Haricots verts en morceaux. 2. Faire cuire Semoule selon les instructions du paquet. 3. Dans une poêle, faire revenir Saumon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Huile d'olive et laisser mijoter quelques instants. 6. Mélanger avec Semoule et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Facile",
+    "prix": "Cher",
+    "calories": "Moyen"
+  },
+  {
+    "id": 72,
+    "titre": "Pâtes au Crevettes et Brocolis Sauté",
+    "ingredients": [
+      "pâtes",
+      "crevettes",
+      "brocolis",
+      "haricots verts",
+      "crème",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Brocolis et Haricots verts en morceaux. 2. Faire cuire Pâtes selon les instructions du paquet. 3. Dans une poêle, faire revenir Crevettes avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Crème et laisser mijoter quelques instants. 6. Mélanger avec Pâtes et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Difficile",
+    "prix": "Cher",
+    "calories": "Faible"
+  },
+  {
+    "id": 73,
+    "titre": "Polenta au Crevettes et Haricots verts Sauté",
+    "ingredients": [
+      "polenta",
+      "crevettes",
+      "haricots verts",
+      "poivrons",
+      "crème",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Haricots verts et Poivrons en morceaux. 2. Faire cuire Polenta selon les instructions du paquet. 3. Dans une poêle, faire revenir Crevettes avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Crème et laisser mijoter quelques instants. 6. Mélanger avec Polenta et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Facile",
+    "prix": "Moyen",
+    "calories": "Faible"
+  },
+  {
+    "id": 74,
+    "titre": "Pâtes au Oeufs et Épinards Rôti",
+    "ingredients": [
+      "pâtes",
+      "oeufs",
+      "épinards",
+      "carottes",
+      "pesto",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Épinards et Carottes en morceaux. 2. Faire cuire Pâtes selon les instructions du paquet. 3. Dans une poêle, faire revenir Oeufs avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Pesto et laisser mijoter quelques instants. 6. Mélanger avec Pâtes et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Moyen",
+    "prix": "Moyen",
+    "calories": "Élevé"
+  },
+  {
+    "id": 75,
+    "titre": "Polenta au Saumon et Chou-fleur Rôti",
+    "ingredients": [
+      "polenta",
+      "saumon",
+      "chou-fleur",
+      "haricots verts",
+      "lait de coco",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Chou-fleur et Haricots verts en morceaux. 2. Faire cuire Polenta selon les instructions du paquet. 3. Dans une poêle, faire revenir Saumon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Lait de Coco et laisser mijoter quelques instants. 6. Mélanger avec Polenta et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Difficile",
+    "prix": "Moyen",
+    "calories": "Faible"
+  },
+  {
+    "id": 76,
+    "titre": "Pommes de terre au Thon et Haricots verts Sauté",
+    "ingredients": [
+      "pommes de terre",
+      "thon",
+      "haricots verts",
+      "poivrons",
+      "sauce soja",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Haricots verts et Poivrons en morceaux. 2. Faire cuire Pommes de terre selon les instructions du paquet. 3. Dans une poêle, faire revenir Thon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Soja et laisser mijoter quelques instants. 6. Mélanger avec Pommes de terre et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Moyen",
+    "prix": "Moyen",
+    "calories": "Élevé"
+  },
+  {
+    "id": 77,
+    "titre": "Blé au Thon et Courgettes Express",
+    "ingredients": [
+      "blé",
+      "thon",
+      "courgettes",
+      "carottes",
+      "moutarde",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Courgettes et Carottes en morceaux. 2. Faire cuire Blé selon les instructions du paquet. 3. Dans une poêle, faire revenir Thon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Moutarde et laisser mijoter quelques instants. 6. Mélanger avec Blé et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Difficile",
+    "prix": "Cher",
+    "calories": "Élevé"
+  },
+  {
+    "id": 78,
+    "titre": "Polenta au Thon et Champignons Épicé",
+    "ingredients": [
+      "polenta",
+      "thon",
+      "champignons",
+      "poivrons",
+      "pesto",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Champignons et Poivrons en morceaux. 2. Faire cuire Polenta selon les instructions du paquet. 3. Dans une poêle, faire revenir Thon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Pesto et laisser mijoter quelques instants. 6. Mélanger avec Polenta et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Facile",
+    "prix": "Cher",
+    "calories": "Élevé"
+  },
+  {
+    "id": 79,
+    "titre": "Pommes de terre au Poulet et Chou-fleur Mijoté",
+    "ingredients": [
+      "pommes de terre",
+      "poulet",
+      "chou-fleur",
+      "courgettes",
+      "beurre citron",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Chou-fleur et Courgettes en morceaux. 2. Faire cuire Pommes de terre selon les instructions du paquet. 3. Dans une poêle, faire revenir Poulet avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Beurre Citron et laisser mijoter quelques instants. 6. Mélanger avec Pommes de terre et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Difficile",
+    "prix": "Bon marché",
+    "calories": "Faible"
+  },
+  {
+    "id": 80,
+    "titre": "Riz au Poulet et Chou-fleur Léger",
+    "ingredients": [
+      "riz",
+      "poulet",
+      "chou-fleur",
+      "champignons",
+      "lait de coco",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Chou-fleur et Champignons en morceaux. 2. Faire cuire Riz selon les instructions du paquet. 3. Dans une poêle, faire revenir Poulet avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Lait de Coco et laisser mijoter quelques instants. 6. Mélanger avec Riz et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Difficile",
+    "prix": "Cher",
+    "calories": "Moyen"
+  },
+  {
+    "id": 81,
+    "titre": "Quinoa au Haricots Rouges et Carottes Gourmand",
+    "ingredients": [
+      "quinoa",
+      "haricots rouges",
+      "carottes",
+      "poivrons",
+      "curry",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Carottes et Poivrons en morceaux. 2. Faire cuire Quinoa selon les instructions du paquet. 3. Dans une poêle, faire revenir Haricots Rouges avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Curry et laisser mijoter quelques instants. 6. Mélanger avec Quinoa et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Difficile",
+    "prix": "Cher",
+    "calories": "Élevé"
+  },
+  {
+    "id": 82,
+    "titre": "Pommes de terre au Saumon et Épinards Frais",
+    "ingredients": [
+      "pommes de terre",
+      "saumon",
+      "épinards",
+      "carottes",
+      "moutarde",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Épinards et Carottes en morceaux. 2. Faire cuire Pommes de terre selon les instructions du paquet. 3. Dans une poêle, faire revenir Saumon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Moutarde et laisser mijoter quelques instants. 6. Mélanger avec Pommes de terre et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Facile",
+    "prix": "Bon marché",
+    "calories": "Élevé"
+  },
+  {
+    "id": 83,
+    "titre": "Semoule au Crevettes et Champignons Crémeux",
+    "ingredients": [
+      "semoule",
+      "crevettes",
+      "champignons",
+      "carottes",
+      "crème",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Champignons et Carottes en morceaux. 2. Faire cuire Semoule selon les instructions du paquet. 3. Dans une poêle, faire revenir Crevettes avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Crème et laisser mijoter quelques instants. 6. Mélanger avec Semoule et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Difficile",
+    "prix": "Cher",
+    "calories": "Faible"
+  },
+  {
+    "id": 84,
+    "titre": "Pommes de terre au Thon et Petits pois Rôti",
+    "ingredients": [
+      "pommes de terre",
+      "thon",
+      "petits pois",
+      "poivrons",
+      "lait de coco",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Petits pois et Poivrons en morceaux. 2. Faire cuire Pommes de terre selon les instructions du paquet. 3. Dans une poêle, faire revenir Thon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Lait de Coco et laisser mijoter quelques instants. 6. Mélanger avec Pommes de terre et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Moyen",
+    "prix": "Moyen",
+    "calories": "Moyen"
+  },
+  {
+    "id": 85,
+    "titre": "Pâtes au Oeufs et Aubergines Épicé",
+    "ingredients": [
+      "pâtes",
+      "oeufs",
+      "aubergines",
+      "épinards",
+      "huile d'olive",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Aubergines et Épinards en morceaux. 2. Faire cuire Pâtes selon les instructions du paquet. 3. Dans une poêle, faire revenir Oeufs avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Huile d'olive et laisser mijoter quelques instants. 6. Mélanger avec Pâtes et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Difficile",
+    "prix": "Moyen",
+    "calories": "Moyen"
+  },
+  {
+    "id": 86,
+    "titre": "Riz au Haricots Rouges et Carottes Gourmand",
+    "ingredients": [
+      "riz",
+      "haricots rouges",
+      "carottes",
+      "poivrons",
+      "curry",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Carottes et Poivrons en morceaux. 2. Faire cuire Riz selon les instructions du paquet. 3. Dans une poêle, faire revenir Haricots Rouges avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Curry et laisser mijoter quelques instants. 6. Mélanger avec Riz et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Difficile",
+    "prix": "Bon marché",
+    "calories": "Élevé"
+  },
+  {
+    "id": 87,
+    "titre": "Quinoa au Thon et Épinards Rôti",
+    "ingredients": [
+      "quinoa",
+      "thon",
+      "épinards",
+      "carottes",
+      "curry",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Épinards et Carottes en morceaux. 2. Faire cuire Quinoa selon les instructions du paquet. 3. Dans une poêle, faire revenir Thon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Curry et laisser mijoter quelques instants. 6. Mélanger avec Quinoa et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Facile",
+    "prix": "Cher",
+    "calories": "Moyen"
+  },
+  {
+    "id": 88,
+    "titre": "Polenta au Boeuf et Petits pois Rôti",
+    "ingredients": [
+      "polenta",
+      "boeuf",
+      "petits pois",
+      "brocolis",
+      "sauce tomate",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Petits pois et Brocolis en morceaux. 2. Faire cuire Polenta selon les instructions du paquet. 3. Dans une poêle, faire revenir Boeuf avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Tomate et laisser mijoter quelques instants. 6. Mélanger avec Polenta et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Facile",
+    "prix": "Bon marché",
+    "calories": "Élevé"
+  },
+  {
+    "id": 89,
+    "titre": "Blé au Thon et Haricots verts Mijoté",
+    "ingredients": [
+      "blé",
+      "thon",
+      "haricots verts",
+      "chou-fleur",
+      "pesto",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Haricots verts et Chou-fleur en morceaux. 2. Faire cuire Blé selon les instructions du paquet. 3. Dans une poêle, faire revenir Thon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Pesto et laisser mijoter quelques instants. 6. Mélanger avec Blé et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Facile",
+    "prix": "Cher",
+    "calories": "Faible"
+  },
+  {
+    "id": 90,
+    "titre": "Semoule au Porc et Épinards Grillé",
+    "ingredients": [
+      "semoule",
+      "porc",
+      "épinards",
+      "carottes",
+      "huile d'olive",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Épinards et Carottes en morceaux. 2. Faire cuire Semoule selon les instructions du paquet. 3. Dans une poêle, faire revenir Porc avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Huile d'olive et laisser mijoter quelques instants. 6. Mélanger avec Semoule et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Facile",
+    "prix": "Cher",
+    "calories": "Moyen"
+  },
+  {
+    "id": 91,
+    "titre": "Riz au Poulet et Courgettes Léger",
+    "ingredients": [
+      "riz",
+      "poulet",
+      "courgettes",
+      "petits pois",
+      "sauce soja",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Courgettes et Petits pois en morceaux. 2. Faire cuire Riz selon les instructions du paquet. 3. Dans une poêle, faire revenir Poulet avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Soja et laisser mijoter quelques instants. 6. Mélanger avec Riz et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Facile",
+    "prix": "Cher",
+    "calories": "Moyen"
+  },
+  {
+    "id": 92,
+    "titre": "Gnocchis au Haricots Rouges et Champignons Épicé",
+    "ingredients": [
+      "gnocchis",
+      "haricots rouges",
+      "champignons",
+      "courgettes",
+      "sauce tomate",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Champignons et Courgettes en morceaux. 2. Faire cuire Gnocchis selon les instructions du paquet. 3. Dans une poêle, faire revenir Haricots Rouges avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Tomate et laisser mijoter quelques instants. 6. Mélanger avec Gnocchis et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Moyen",
+    "prix": "Moyen",
+    "calories": "Élevé"
+  },
+  {
+    "id": 93,
+    "titre": "Pâtes au Tofu et Poivrons Frais",
+    "ingredients": [
+      "pâtes",
+      "tofu",
+      "poivrons",
+      "champignons",
+      "crème",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Poivrons et Champignons en morceaux. 2. Faire cuire Pâtes selon les instructions du paquet. 3. Dans une poêle, faire revenir Tofu avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Crème et laisser mijoter quelques instants. 6. Mélanger avec Pâtes et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Moyen",
+    "prix": "Cher",
+    "calories": "Élevé"
+  },
+  {
+    "id": 94,
+    "titre": "Blé au Saumon et Champignons Gourmand",
+    "ingredients": [
+      "blé",
+      "saumon",
+      "champignons",
+      "aubergines",
+      "huile d'olive",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Champignons et Aubergines en morceaux. 2. Faire cuire Blé selon les instructions du paquet. 3. Dans une poêle, faire revenir Saumon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Huile d'olive et laisser mijoter quelques instants. 6. Mélanger avec Blé et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Moyen",
+    "prix": "Moyen",
+    "calories": "Faible"
+  },
+  {
+    "id": 95,
+    "titre": "Blé au Boeuf et Champignons Rôti",
+    "ingredients": [
+      "blé",
+      "boeuf",
+      "champignons",
+      "épinards",
+      "sauce soja",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Champignons et Épinards en morceaux. 2. Faire cuire Blé selon les instructions du paquet. 3. Dans une poêle, faire revenir Boeuf avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Soja et laisser mijoter quelques instants. 6. Mélanger avec Blé et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Facile",
+    "prix": "Cher",
+    "calories": "Moyen"
+  },
+  {
+    "id": 96,
+    "titre": "Blé au Poulet et Carottes Crémeux",
+    "ingredients": [
+      "blé",
+      "poulet",
+      "carottes",
+      "brocolis",
+      "huile d'olive",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Carottes et Brocolis en morceaux. 2. Faire cuire Blé selon les instructions du paquet. 3. Dans une poêle, faire revenir Poulet avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Huile d'olive et laisser mijoter quelques instants. 6. Mélanger avec Blé et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Moyen",
+    "prix": "Cher",
+    "calories": "Faible"
+  },
+  {
+    "id": 97,
+    "titre": "Quinoa au Boeuf et Haricots verts Épicé",
+    "ingredients": [
+      "quinoa",
+      "boeuf",
+      "haricots verts",
+      "épinards",
+      "moutarde",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Haricots verts et Épinards en morceaux. 2. Faire cuire Quinoa selon les instructions du paquet. 3. Dans une poêle, faire revenir Boeuf avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Moutarde et laisser mijoter quelques instants. 6. Mélanger avec Quinoa et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Facile",
+    "prix": "Cher",
+    "calories": "Faible"
+  },
+  {
+    "id": 98,
+    "titre": "Riz au Porc et Poivrons Frais",
+    "ingredients": [
+      "riz",
+      "porc",
+      "poivrons",
+      "courgettes",
+      "crème",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Poivrons et Courgettes en morceaux. 2. Faire cuire Riz selon les instructions du paquet. 3. Dans une poêle, faire revenir Porc avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Crème et laisser mijoter quelques instants. 6. Mélanger avec Riz et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Moyen",
+    "prix": "Moyen",
+    "calories": "Faible"
+  },
+  {
+    "id": 99,
+    "titre": "Gnocchis au Boeuf et Brocolis Épicé",
+    "ingredients": [
+      "gnocchis",
+      "boeuf",
+      "brocolis",
+      "poivrons",
+      "crème",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Brocolis et Poivrons en morceaux. 2. Faire cuire Gnocchis selon les instructions du paquet. 3. Dans une poêle, faire revenir Boeuf avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Crème et laisser mijoter quelques instants. 6. Mélanger avec Gnocchis et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Facile",
+    "prix": "Bon marché",
+    "calories": "Faible"
+  },
+  {
+    "id": 100,
+    "titre": "Pommes de terre au Haricots Rouges et Champignons Rôti",
+    "ingredients": [
+      "pommes de terre",
+      "haricots rouges",
+      "champignons",
+      "poivrons",
+      "sauce tomate",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Champignons et Poivrons en morceaux. 2. Faire cuire Pommes de terre selon les instructions du paquet. 3. Dans une poêle, faire revenir Haricots Rouges avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Tomate et laisser mijoter quelques instants. 6. Mélanger avec Pommes de terre et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Difficile",
+    "prix": "Bon marché",
+    "calories": "Moyen"
+  },
+  {
+    "id": 101,
+    "titre": "Gnocchis au Crevettes et Poivrons Sauté",
+    "ingredients": [
+      "gnocchis",
+      "crevettes",
+      "poivrons",
+      "épinards",
+      "pesto",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Poivrons et Épinards en morceaux. 2. Faire cuire Gnocchis selon les instructions du paquet. 3. Dans une poêle, faire revenir Crevettes avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Pesto et laisser mijoter quelques instants. 6. Mélanger avec Gnocchis et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Facile",
+    "prix": "Cher",
+    "calories": "Moyen"
+  },
+  {
+    "id": 102,
+    "titre": "Polenta au Oeufs et Carottes Rôti",
+    "ingredients": [
+      "polenta",
+      "oeufs",
+      "carottes",
+      "courgettes",
+      "sauce tomate",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Carottes et Courgettes en morceaux. 2. Faire cuire Polenta selon les instructions du paquet. 3. Dans une poêle, faire revenir Oeufs avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Tomate et laisser mijoter quelques instants. 6. Mélanger avec Polenta et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Difficile",
+    "prix": "Bon marché",
+    "calories": "Faible"
+  },
+  {
+    "id": 103,
+    "titre": "Blé au Lentilles et Aubergines Frais",
+    "ingredients": [
+      "blé",
+      "lentilles",
+      "aubergines",
+      "chou-fleur",
+      "pesto",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Aubergines et Chou-fleur en morceaux. 2. Faire cuire Blé selon les instructions du paquet. 3. Dans une poêle, faire revenir Lentilles avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Pesto et laisser mijoter quelques instants. 6. Mélanger avec Blé et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Moyen",
+    "prix": "Bon marché",
+    "calories": "Moyen"
+  },
+  {
+    "id": 104,
+    "titre": "Blé au Poulet et Brocolis Crémeux",
+    "ingredients": [
+      "blé",
+      "poulet",
+      "brocolis",
+      "épinards",
+      "sauce soja",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Brocolis et Épinards en morceaux. 2. Faire cuire Blé selon les instructions du paquet. 3. Dans une poêle, faire revenir Poulet avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Soja et laisser mijoter quelques instants. 6. Mélanger avec Blé et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Moyen",
+    "prix": "Bon marché",
+    "calories": "Élevé"
+  },
+  {
+    "id": 105,
+    "titre": "Polenta au Thon et Carottes Gourmand",
+    "ingredients": [
+      "polenta",
+      "thon",
+      "carottes",
+      "petits pois",
+      "huile d'olive",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Carottes et Petits pois en morceaux. 2. Faire cuire Polenta selon les instructions du paquet. 3. Dans une poêle, faire revenir Thon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Huile d'olive et laisser mijoter quelques instants. 6. Mélanger avec Polenta et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Moyen",
+    "prix": "Bon marché",
+    "calories": "Faible"
+  },
+  {
+    "id": 106,
+    "titre": "Blé au Haricots Rouges et Champignons Mijoté",
+    "ingredients": [
+      "blé",
+      "haricots rouges",
+      "champignons",
+      "carottes",
+      "crème",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Champignons et Carottes en morceaux. 2. Faire cuire Blé selon les instructions du paquet. 3. Dans une poêle, faire revenir Haricots Rouges avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Crème et laisser mijoter quelques instants. 6. Mélanger avec Blé et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Difficile",
+    "prix": "Bon marché",
+    "calories": "Moyen"
+  },
+  {
+    "id": 107,
+    "titre": "Pâtes au Boeuf et Haricots verts Express",
+    "ingredients": [
+      "pâtes",
+      "boeuf",
+      "haricots verts",
+      "carottes",
+      "sauce soja",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Haricots verts et Carottes en morceaux. 2. Faire cuire Pâtes selon les instructions du paquet. 3. Dans une poêle, faire revenir Boeuf avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Soja et laisser mijoter quelques instants. 6. Mélanger avec Pâtes et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Facile",
+    "prix": "Moyen",
+    "calories": "Faible"
+  },
+  {
+    "id": 108,
+    "titre": "Gnocchis au Boeuf et Poivrons Grillé",
+    "ingredients": [
+      "gnocchis",
+      "boeuf",
+      "poivrons",
+      "petits pois",
+      "pesto",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Poivrons et Petits pois en morceaux. 2. Faire cuire Gnocchis selon les instructions du paquet. 3. Dans une poêle, faire revenir Boeuf avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Pesto et laisser mijoter quelques instants. 6. Mélanger avec Gnocchis et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Difficile",
+    "prix": "Bon marché",
+    "calories": "Faible"
+  },
+  {
+    "id": 109,
+    "titre": "Quinoa au Poulet et Petits pois Express",
+    "ingredients": [
+      "quinoa",
+      "poulet",
+      "petits pois",
+      "champignons",
+      "lait de coco",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Petits pois et Champignons en morceaux. 2. Faire cuire Quinoa selon les instructions du paquet. 3. Dans une poêle, faire revenir Poulet avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Lait de Coco et laisser mijoter quelques instants. 6. Mélanger avec Quinoa et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Difficile",
+    "prix": "Bon marché",
+    "calories": "Élevé"
+  },
+  {
+    "id": 110,
+    "titre": "Gnocchis au Oeufs et Carottes Épicé",
+    "ingredients": [
+      "gnocchis",
+      "oeufs",
+      "carottes",
+      "courgettes",
+      "moutarde",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Carottes et Courgettes en morceaux. 2. Faire cuire Gnocchis selon les instructions du paquet. 3. Dans une poêle, faire revenir Oeufs avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Moutarde et laisser mijoter quelques instants. 6. Mélanger avec Gnocchis et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Facile",
+    "prix": "Moyen",
+    "calories": "Faible"
+  },
+  {
+    "id": 111,
+    "titre": "Riz au Lentilles et Haricots verts Mijoté",
+    "ingredients": [
+      "riz",
+      "lentilles",
+      "haricots verts",
+      "chou-fleur",
+      "beurre citron",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Haricots verts et Chou-fleur en morceaux. 2. Faire cuire Riz selon les instructions du paquet. 3. Dans une poêle, faire revenir Lentilles avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Beurre Citron et laisser mijoter quelques instants. 6. Mélanger avec Riz et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Moyen",
+    "prix": "Bon marché",
+    "calories": "Faible"
+  },
+  {
+    "id": 112,
+    "titre": "Polenta au Haricots Rouges et Poivrons Frais",
+    "ingredients": [
+      "polenta",
+      "haricots rouges",
+      "poivrons",
+      "épinards",
+      "lait de coco",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Poivrons et Épinards en morceaux. 2. Faire cuire Polenta selon les instructions du paquet. 3. Dans une poêle, faire revenir Haricots Rouges avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Lait de Coco et laisser mijoter quelques instants. 6. Mélanger avec Polenta et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Difficile",
+    "prix": "Bon marché",
+    "calories": "Élevé"
+  },
+  {
+    "id": 113,
+    "titre": "Polenta au Oeufs et Chou-fleur Épicé",
+    "ingredients": [
+      "polenta",
+      "oeufs",
+      "chou-fleur",
+      "champignons",
+      "crème",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Chou-fleur et Champignons en morceaux. 2. Faire cuire Polenta selon les instructions du paquet. 3. Dans une poêle, faire revenir Oeufs avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Crème et laisser mijoter quelques instants. 6. Mélanger avec Polenta et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Moyen",
+    "prix": "Moyen",
+    "calories": "Moyen"
+  },
+  {
+    "id": 114,
+    "titre": "Polenta au Thon et Aubergines Sauté",
+    "ingredients": [
+      "polenta",
+      "thon",
+      "aubergines",
+      "carottes",
+      "huile d'olive",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Aubergines et Carottes en morceaux. 2. Faire cuire Polenta selon les instructions du paquet. 3. Dans une poêle, faire revenir Thon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Huile d'olive et laisser mijoter quelques instants. 6. Mélanger avec Polenta et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Facile",
+    "prix": "Cher",
+    "calories": "Moyen"
+  },
+  {
+    "id": 115,
+    "titre": "Polenta au Tofu et Petits pois Rôti",
+    "ingredients": [
+      "polenta",
+      "tofu",
+      "petits pois",
+      "haricots verts",
+      "sauce tomate",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Petits pois et Haricots verts en morceaux. 2. Faire cuire Polenta selon les instructions du paquet. 3. Dans une poêle, faire revenir Tofu avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Tomate et laisser mijoter quelques instants. 6. Mélanger avec Polenta et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Moyen",
+    "prix": "Moyen",
+    "calories": "Élevé"
+  },
+  {
+    "id": 116,
+    "titre": "Semoule au Haricots Rouges et Carottes Épicé",
+    "ingredients": [
+      "semoule",
+      "haricots rouges",
+      "carottes",
+      "poivrons",
+      "sauce soja",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Carottes et Poivrons en morceaux. 2. Faire cuire Semoule selon les instructions du paquet. 3. Dans une poêle, faire revenir Haricots Rouges avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Soja et laisser mijoter quelques instants. 6. Mélanger avec Semoule et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Facile",
+    "prix": "Moyen",
+    "calories": "Faible"
+  },
+  {
+    "id": 117,
+    "titre": "Gnocchis au Haricots Rouges et Petits pois Express",
+    "ingredients": [
+      "gnocchis",
+      "haricots rouges",
+      "petits pois",
+      "brocolis",
+      "moutarde",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Petits pois et Brocolis en morceaux. 2. Faire cuire Gnocchis selon les instructions du paquet. 3. Dans une poêle, faire revenir Haricots Rouges avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Moutarde et laisser mijoter quelques instants. 6. Mélanger avec Gnocchis et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Facile",
+    "prix": "Cher",
+    "calories": "Élevé"
+  },
+  {
+    "id": 118,
+    "titre": "Polenta au Saumon et Épinards Gourmand",
+    "ingredients": [
+      "polenta",
+      "saumon",
+      "épinards",
+      "poivrons",
+      "sauce tomate",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Épinards et Poivrons en morceaux. 2. Faire cuire Polenta selon les instructions du paquet. 3. Dans une poêle, faire revenir Saumon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Tomate et laisser mijoter quelques instants. 6. Mélanger avec Polenta et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Facile",
+    "prix": "Moyen",
+    "calories": "Élevé"
+  },
+  {
+    "id": 119,
+    "titre": "Pâtes au Boeuf et Champignons Frais",
+    "ingredients": [
+      "pâtes",
+      "boeuf",
+      "champignons",
+      "brocolis",
+      "lait de coco",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Champignons et Brocolis en morceaux. 2. Faire cuire Pâtes selon les instructions du paquet. 3. Dans une poêle, faire revenir Boeuf avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Lait de Coco et laisser mijoter quelques instants. 6. Mélanger avec Pâtes et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Difficile",
+    "prix": "Bon marché",
+    "calories": "Moyen"
+  },
+  {
+    "id": 120,
+    "titre": "Quinoa au Boeuf et Haricots verts Sauté",
+    "ingredients": [
+      "quinoa",
+      "boeuf",
+      "haricots verts",
+      "carottes",
+      "pesto",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Haricots verts et Carottes en morceaux. 2. Faire cuire Quinoa selon les instructions du paquet. 3. Dans une poêle, faire revenir Boeuf avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Pesto et laisser mijoter quelques instants. 6. Mélanger avec Quinoa et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Difficile",
+    "prix": "Moyen",
+    "calories": "Élevé"
+  },
+  {
+    "id": 121,
+    "titre": "Semoule au Boeuf et Petits pois Frais",
+    "ingredients": [
+      "semoule",
+      "boeuf",
+      "petits pois",
+      "chou-fleur",
+      "lait de coco",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Petits pois et Chou-fleur en morceaux. 2. Faire cuire Semoule selon les instructions du paquet. 3. Dans une poêle, faire revenir Boeuf avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Lait de Coco et laisser mijoter quelques instants. 6. Mélanger avec Semoule et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Difficile",
+    "prix": "Moyen",
+    "calories": "Moyen"
+  },
+  {
+    "id": 122,
+    "titre": "Riz au Thon et Courgettes Mijoté",
+    "ingredients": [
+      "riz",
+      "thon",
+      "courgettes",
+      "carottes",
+      "beurre citron",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Courgettes et Carottes en morceaux. 2. Faire cuire Riz selon les instructions du paquet. 3. Dans une poêle, faire revenir Thon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Beurre Citron et laisser mijoter quelques instants. 6. Mélanger avec Riz et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Difficile",
+    "prix": "Cher",
+    "calories": "Élevé"
+  },
+  {
+    "id": 123,
+    "titre": "Riz au Lentilles et Courgettes Frais",
+    "ingredients": [
+      "riz",
+      "lentilles",
+      "courgettes",
+      "carottes",
+      "lait de coco",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Courgettes et Carottes en morceaux. 2. Faire cuire Riz selon les instructions du paquet. 3. Dans une poêle, faire revenir Lentilles avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Lait de Coco et laisser mijoter quelques instants. 6. Mélanger avec Riz et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Facile",
+    "prix": "Moyen",
+    "calories": "Élevé"
+  },
+  {
+    "id": 124,
+    "titre": "Semoule au Oeufs et Chou-fleur Gourmand",
+    "ingredients": [
+      "semoule",
+      "oeufs",
+      "chou-fleur",
+      "courgettes",
+      "lait de coco",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Chou-fleur et Courgettes en morceaux. 2. Faire cuire Semoule selon les instructions du paquet. 3. Dans une poêle, faire revenir Oeufs avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Lait de Coco et laisser mijoter quelques instants. 6. Mélanger avec Semoule et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Moyen",
+    "prix": "Moyen",
+    "calories": "Élevé"
+  },
+  {
+    "id": 125,
+    "titre": "Pâtes au Tofu et Carottes Frais",
+    "ingredients": [
+      "pâtes",
+      "tofu",
+      "carottes",
+      "petits pois",
+      "huile d'olive",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Carottes et Petits pois en morceaux. 2. Faire cuire Pâtes selon les instructions du paquet. 3. Dans une poêle, faire revenir Tofu avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Huile d'olive et laisser mijoter quelques instants. 6. Mélanger avec Pâtes et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Moyen",
+    "prix": "Moyen",
+    "calories": "Élevé"
+  },
+  {
+    "id": 126,
+    "titre": "Gnocchis au Crevettes et Chou-fleur Gourmand",
+    "ingredients": [
+      "gnocchis",
+      "crevettes",
+      "chou-fleur",
+      "courgettes",
+      "moutarde",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Chou-fleur et Courgettes en morceaux. 2. Faire cuire Gnocchis selon les instructions du paquet. 3. Dans une poêle, faire revenir Crevettes avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Moutarde et laisser mijoter quelques instants. 6. Mélanger avec Gnocchis et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Moyen",
+    "prix": "Cher",
+    "calories": "Faible"
+  },
+  {
+    "id": 127,
+    "titre": "Polenta au Porc et Chou-fleur Crémeux",
+    "ingredients": [
+      "polenta",
+      "porc",
+      "chou-fleur",
+      "brocolis",
+      "sauce tomate",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Chou-fleur et Brocolis en morceaux. 2. Faire cuire Polenta selon les instructions du paquet. 3. Dans une poêle, faire revenir Porc avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Tomate et laisser mijoter quelques instants. 6. Mélanger avec Polenta et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Facile",
+    "prix": "Moyen",
+    "calories": "Faible"
+  },
+  {
+    "id": 128,
+    "titre": "Riz au Haricots Rouges et Poivrons Épicé",
+    "ingredients": [
+      "riz",
+      "haricots rouges",
+      "poivrons",
+      "courgettes",
+      "beurre citron",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Poivrons et Courgettes en morceaux. 2. Faire cuire Riz selon les instructions du paquet. 3. Dans une poêle, faire revenir Haricots Rouges avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Beurre Citron et laisser mijoter quelques instants. 6. Mélanger avec Riz et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Difficile",
+    "prix": "Cher",
+    "calories": "Élevé"
+  },
+  {
+    "id": 129,
+    "titre": "Blé au Saumon et Courgettes Grillé",
+    "ingredients": [
+      "blé",
+      "saumon",
+      "courgettes",
+      "petits pois",
+      "beurre citron",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Courgettes et Petits pois en morceaux. 2. Faire cuire Blé selon les instructions du paquet. 3. Dans une poêle, faire revenir Saumon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Beurre Citron et laisser mijoter quelques instants. 6. Mélanger avec Blé et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Moyen",
+    "prix": "Bon marché",
+    "calories": "Élevé"
+  },
+  {
+    "id": 130,
+    "titre": "Pommes de terre au Oeufs et Courgettes Crémeux",
+    "ingredients": [
+      "pommes de terre",
+      "oeufs",
+      "courgettes",
+      "chou-fleur",
+      "pesto",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Courgettes et Chou-fleur en morceaux. 2. Faire cuire Pommes de terre selon les instructions du paquet. 3. Dans une poêle, faire revenir Oeufs avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Pesto et laisser mijoter quelques instants. 6. Mélanger avec Pommes de terre et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Facile",
+    "prix": "Cher",
+    "calories": "Moyen"
+  },
+  {
+    "id": 131,
+    "titre": "Quinoa au Haricots Rouges et Brocolis Mijoté",
+    "ingredients": [
+      "quinoa",
+      "haricots rouges",
+      "brocolis",
+      "champignons",
+      "curry",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Brocolis et Champignons en morceaux. 2. Faire cuire Quinoa selon les instructions du paquet. 3. Dans une poêle, faire revenir Haricots Rouges avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Curry et laisser mijoter quelques instants. 6. Mélanger avec Quinoa et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Difficile",
+    "prix": "Moyen",
+    "calories": "Élevé"
+  },
+  {
+    "id": 132,
+    "titre": "Semoule au Poulet et Courgettes Crémeux",
+    "ingredients": [
+      "semoule",
+      "poulet",
+      "courgettes",
+      "poivrons",
+      "pesto",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Courgettes et Poivrons en morceaux. 2. Faire cuire Semoule selon les instructions du paquet. 3. Dans une poêle, faire revenir Poulet avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Pesto et laisser mijoter quelques instants. 6. Mélanger avec Semoule et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Facile",
+    "prix": "Bon marché",
+    "calories": "Élevé"
+  },
+  {
+    "id": 133,
+    "titre": "Pommes de terre au Haricots Rouges et Petits pois Épicé",
+    "ingredients": [
+      "pommes de terre",
+      "haricots rouges",
+      "petits pois",
+      "brocolis",
+      "pesto",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Petits pois et Brocolis en morceaux. 2. Faire cuire Pommes de terre selon les instructions du paquet. 3. Dans une poêle, faire revenir Haricots Rouges avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Pesto et laisser mijoter quelques instants. 6. Mélanger avec Pommes de terre et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Difficile",
+    "prix": "Cher",
+    "calories": "Moyen"
+  },
+  {
+    "id": 134,
+    "titre": "Riz au Crevettes et Chou-fleur Frais",
+    "ingredients": [
+      "riz",
+      "crevettes",
+      "chou-fleur",
+      "brocolis",
+      "pesto",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Chou-fleur et Brocolis en morceaux. 2. Faire cuire Riz selon les instructions du paquet. 3. Dans une poêle, faire revenir Crevettes avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Pesto et laisser mijoter quelques instants. 6. Mélanger avec Riz et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Moyen",
+    "prix": "Moyen",
+    "calories": "Moyen"
+  },
+  {
+    "id": 135,
+    "titre": "Pommes de terre au Saumon et Épinards Grillé",
+    "ingredients": [
+      "pommes de terre",
+      "saumon",
+      "épinards",
+      "haricots verts",
+      "beurre citron",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Épinards et Haricots verts en morceaux. 2. Faire cuire Pommes de terre selon les instructions du paquet. 3. Dans une poêle, faire revenir Saumon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Beurre Citron et laisser mijoter quelques instants. 6. Mélanger avec Pommes de terre et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Difficile",
+    "prix": "Moyen",
+    "calories": "Élevé"
+  },
+  {
+    "id": 136,
+    "titre": "Quinoa au Saumon et Haricots verts Mijoté",
+    "ingredients": [
+      "quinoa",
+      "saumon",
+      "haricots verts",
+      "petits pois",
+      "moutarde",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Haricots verts et Petits pois en morceaux. 2. Faire cuire Quinoa selon les instructions du paquet. 3. Dans une poêle, faire revenir Saumon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Moutarde et laisser mijoter quelques instants. 6. Mélanger avec Quinoa et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Difficile",
+    "prix": "Bon marché",
+    "calories": "Faible"
+  },
+  {
+    "id": 137,
+    "titre": "Pâtes au Tofu et Chou-fleur Épicé",
+    "ingredients": [
+      "pâtes",
+      "tofu",
+      "chou-fleur",
+      "courgettes",
+      "lait de coco",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Chou-fleur et Courgettes en morceaux. 2. Faire cuire Pâtes selon les instructions du paquet. 3. Dans une poêle, faire revenir Tofu avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Lait de Coco et laisser mijoter quelques instants. 6. Mélanger avec Pâtes et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Moyen",
+    "prix": "Cher",
+    "calories": "Moyen"
+  },
+  {
+    "id": 138,
+    "titre": "Riz au Crevettes et Chou-fleur Crémeux",
+    "ingredients": [
+      "riz",
+      "crevettes",
+      "chou-fleur",
+      "poivrons",
+      "sauce tomate",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Chou-fleur et Poivrons en morceaux. 2. Faire cuire Riz selon les instructions du paquet. 3. Dans une poêle, faire revenir Crevettes avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Tomate et laisser mijoter quelques instants. 6. Mélanger avec Riz et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Difficile",
+    "prix": "Bon marché",
+    "calories": "Faible"
+  },
+  {
+    "id": 139,
+    "titre": "Riz au Crevettes et Champignons Crémeux",
+    "ingredients": [
+      "riz",
+      "crevettes",
+      "champignons",
+      "brocolis",
+      "pesto",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Champignons et Brocolis en morceaux. 2. Faire cuire Riz selon les instructions du paquet. 3. Dans une poêle, faire revenir Crevettes avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Pesto et laisser mijoter quelques instants. 6. Mélanger avec Riz et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Facile",
+    "prix": "Cher",
+    "calories": "Élevé"
+  },
+  {
+    "id": 140,
+    "titre": "Semoule au Boeuf et Haricots verts Épicé",
+    "ingredients": [
+      "semoule",
+      "boeuf",
+      "haricots verts",
+      "carottes",
+      "huile d'olive",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Haricots verts et Carottes en morceaux. 2. Faire cuire Semoule selon les instructions du paquet. 3. Dans une poêle, faire revenir Boeuf avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Huile d'olive et laisser mijoter quelques instants. 6. Mélanger avec Semoule et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Difficile",
+    "prix": "Moyen",
+    "calories": "Élevé"
+  },
+  {
+    "id": 141,
+    "titre": "Riz au Saumon et Aubergines Mijoté",
+    "ingredients": [
+      "riz",
+      "saumon",
+      "aubergines",
+      "brocolis",
+      "beurre citron",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Aubergines et Brocolis en morceaux. 2. Faire cuire Riz selon les instructions du paquet. 3. Dans une poêle, faire revenir Saumon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Beurre Citron et laisser mijoter quelques instants. 6. Mélanger avec Riz et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Facile",
+    "prix": "Cher",
+    "calories": "Faible"
+  },
+  {
+    "id": 142,
+    "titre": "Polenta au Crevettes et Poivrons Frais",
+    "ingredients": [
+      "polenta",
+      "crevettes",
+      "poivrons",
+      "carottes",
+      "huile d'olive",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Poivrons et Carottes en morceaux. 2. Faire cuire Polenta selon les instructions du paquet. 3. Dans une poêle, faire revenir Crevettes avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Huile d'olive et laisser mijoter quelques instants. 6. Mélanger avec Polenta et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Moyen",
+    "prix": "Cher",
+    "calories": "Faible"
+  },
+  {
+    "id": 143,
+    "titre": "Pommes de terre au Lentilles et Chou-fleur Frais",
+    "ingredients": [
+      "pommes de terre",
+      "lentilles",
+      "chou-fleur",
+      "aubergines",
+      "pesto",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Chou-fleur et Aubergines en morceaux. 2. Faire cuire Pommes de terre selon les instructions du paquet. 3. Dans une poêle, faire revenir Lentilles avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Pesto et laisser mijoter quelques instants. 6. Mélanger avec Pommes de terre et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Difficile",
+    "prix": "Bon marché",
+    "calories": "Élevé"
+  },
+  {
+    "id": 144,
+    "titre": "Polenta au Oeufs et Carottes Grillé",
+    "ingredients": [
+      "polenta",
+      "oeufs",
+      "carottes",
+      "aubergines",
+      "moutarde",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Carottes et Aubergines en morceaux. 2. Faire cuire Polenta selon les instructions du paquet. 3. Dans une poêle, faire revenir Oeufs avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Moutarde et laisser mijoter quelques instants. 6. Mélanger avec Polenta et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Moyen",
+    "prix": "Moyen",
+    "calories": "Élevé"
+  },
+  {
+    "id": 145,
+    "titre": "Pommes de terre au Haricots Rouges et Brocolis Léger",
+    "ingredients": [
+      "pommes de terre",
+      "haricots rouges",
+      "brocolis",
+      "courgettes",
+      "moutarde",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Brocolis et Courgettes en morceaux. 2. Faire cuire Pommes de terre selon les instructions du paquet. 3. Dans une poêle, faire revenir Haricots Rouges avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Moutarde et laisser mijoter quelques instants. 6. Mélanger avec Pommes de terre et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Moyen",
+    "prix": "Bon marché",
+    "calories": "Faible"
+  },
+  {
+    "id": 146,
+    "titre": "Riz au Haricots Rouges et Haricots verts Crémeux",
+    "ingredients": [
+      "riz",
+      "haricots rouges",
+      "haricots verts",
+      "petits pois",
+      "sauce tomate",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Haricots verts et Petits pois en morceaux. 2. Faire cuire Riz selon les instructions du paquet. 3. Dans une poêle, faire revenir Haricots Rouges avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Tomate et laisser mijoter quelques instants. 6. Mélanger avec Riz et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Difficile",
+    "prix": "Moyen",
+    "calories": "Faible"
+  },
+  {
+    "id": 147,
+    "titre": "Pommes de terre au Crevettes et Courgettes Frais",
+    "ingredients": [
+      "pommes de terre",
+      "crevettes",
+      "courgettes",
+      "épinards",
+      "moutarde",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Courgettes et Épinards en morceaux. 2. Faire cuire Pommes de terre selon les instructions du paquet. 3. Dans une poêle, faire revenir Crevettes avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Moutarde et laisser mijoter quelques instants. 6. Mélanger avec Pommes de terre et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Moyen",
+    "prix": "Bon marché",
+    "calories": "Moyen"
+  },
+  {
+    "id": 148,
+    "titre": "Gnocchis au Porc et Courgettes Frais",
+    "ingredients": [
+      "gnocchis",
+      "porc",
+      "courgettes",
+      "aubergines",
+      "lait de coco",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Courgettes et Aubergines en morceaux. 2. Faire cuire Gnocchis selon les instructions du paquet. 3. Dans une poêle, faire revenir Porc avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Lait de Coco et laisser mijoter quelques instants. 6. Mélanger avec Gnocchis et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Difficile",
+    "prix": "Cher",
+    "calories": "Faible"
+  },
+  {
+    "id": 149,
+    "titre": "Gnocchis au Boeuf et Haricots verts Grillé",
+    "ingredients": [
+      "gnocchis",
+      "boeuf",
+      "haricots verts",
+      "poivrons",
+      "curry",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Haricots verts et Poivrons en morceaux. 2. Faire cuire Gnocchis selon les instructions du paquet. 3. Dans une poêle, faire revenir Boeuf avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Curry et laisser mijoter quelques instants. 6. Mélanger avec Gnocchis et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Moyen",
+    "prix": "Bon marché",
+    "calories": "Moyen"
+  },
+  {
+    "id": 150,
+    "titre": "Pâtes au Tofu et Poivrons Mijoté",
+    "ingredients": [
+      "pâtes",
+      "tofu",
+      "poivrons",
+      "courgettes",
+      "beurre citron",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Poivrons et Courgettes en morceaux. 2. Faire cuire Pâtes selon les instructions du paquet. 3. Dans une poêle, faire revenir Tofu avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Beurre Citron et laisser mijoter quelques instants. 6. Mélanger avec Pâtes et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Moyen",
+    "prix": "Bon marché",
+    "calories": "Élevé"
+  },
+  {
+    "id": 151,
+    "titre": "Pommes de terre au Haricots Rouges et Courgettes Gourmand",
+    "ingredients": [
+      "pommes de terre",
+      "haricots rouges",
+      "courgettes",
+      "chou-fleur",
+      "sauce soja",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Courgettes et Chou-fleur en morceaux. 2. Faire cuire Pommes de terre selon les instructions du paquet. 3. Dans une poêle, faire revenir Haricots Rouges avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Soja et laisser mijoter quelques instants. 6. Mélanger avec Pommes de terre et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Moyen",
+    "prix": "Cher",
+    "calories": "Faible"
+  },
+  {
+    "id": 152,
+    "titre": "Polenta au Thon et Haricots verts Grillé",
+    "ingredients": [
+      "polenta",
+      "thon",
+      "haricots verts",
+      "brocolis",
+      "moutarde",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Haricots verts et Brocolis en morceaux. 2. Faire cuire Polenta selon les instructions du paquet. 3. Dans une poêle, faire revenir Thon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Moutarde et laisser mijoter quelques instants. 6. Mélanger avec Polenta et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Facile",
+    "prix": "Cher",
+    "calories": "Moyen"
+  },
+  {
+    "id": 153,
+    "titre": "Pâtes au Lentilles et Haricots verts Grillé",
+    "ingredients": [
+      "pâtes",
+      "lentilles",
+      "haricots verts",
+      "petits pois",
+      "huile d'olive",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Haricots verts et Petits pois en morceaux. 2. Faire cuire Pâtes selon les instructions du paquet. 3. Dans une poêle, faire revenir Lentilles avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Huile d'olive et laisser mijoter quelques instants. 6. Mélanger avec Pâtes et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Facile",
+    "prix": "Moyen",
+    "calories": "Moyen"
+  },
+  {
+    "id": 154,
+    "titre": "Pâtes au Oeufs et Brocolis Sauté",
+    "ingredients": [
+      "pâtes",
+      "oeufs",
+      "brocolis",
+      "aubergines",
+      "huile d'olive",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Brocolis et Aubergines en morceaux. 2. Faire cuire Pâtes selon les instructions du paquet. 3. Dans une poêle, faire revenir Oeufs avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Huile d'olive et laisser mijoter quelques instants. 6. Mélanger avec Pâtes et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Facile",
+    "prix": "Bon marché",
+    "calories": "Élevé"
+  },
+  {
+    "id": 155,
+    "titre": "Riz au Tofu et Brocolis Crémeux",
+    "ingredients": [
+      "riz",
+      "tofu",
+      "brocolis",
+      "haricots verts",
+      "lait de coco",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Brocolis et Haricots verts en morceaux. 2. Faire cuire Riz selon les instructions du paquet. 3. Dans une poêle, faire revenir Tofu avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Lait de Coco et laisser mijoter quelques instants. 6. Mélanger avec Riz et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Moyen",
+    "prix": "Bon marché",
+    "calories": "Faible"
+  },
+  {
+    "id": 156,
+    "titre": "Semoule au Thon et Épinards Rôti",
+    "ingredients": [
+      "semoule",
+      "thon",
+      "épinards",
+      "brocolis",
+      "huile d'olive",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Épinards et Brocolis en morceaux. 2. Faire cuire Semoule selon les instructions du paquet. 3. Dans une poêle, faire revenir Thon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Huile d'olive et laisser mijoter quelques instants. 6. Mélanger avec Semoule et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Facile",
+    "prix": "Cher",
+    "calories": "Moyen"
+  },
+  {
+    "id": 157,
+    "titre": "Polenta au Tofu et Petits pois Épicé",
+    "ingredients": [
+      "polenta",
+      "tofu",
+      "petits pois",
+      "chou-fleur",
+      "moutarde",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Petits pois et Chou-fleur en morceaux. 2. Faire cuire Polenta selon les instructions du paquet. 3. Dans une poêle, faire revenir Tofu avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Moutarde et laisser mijoter quelques instants. 6. Mélanger avec Polenta et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Moyen",
+    "prix": "Cher",
+    "calories": "Élevé"
+  },
+  {
+    "id": 158,
+    "titre": "Semoule au Saumon et Courgettes Mijoté",
+    "ingredients": [
+      "semoule",
+      "saumon",
+      "courgettes",
+      "épinards",
+      "beurre citron",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Courgettes et Épinards en morceaux. 2. Faire cuire Semoule selon les instructions du paquet. 3. Dans une poêle, faire revenir Saumon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Beurre Citron et laisser mijoter quelques instants. 6. Mélanger avec Semoule et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Difficile",
+    "prix": "Cher",
+    "calories": "Faible"
+  },
+  {
+    "id": 159,
+    "titre": "Pâtes au Lentilles et Haricots verts Gourmand",
+    "ingredients": [
+      "pâtes",
+      "lentilles",
+      "haricots verts",
+      "chou-fleur",
+      "crème",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Haricots verts et Chou-fleur en morceaux. 2. Faire cuire Pâtes selon les instructions du paquet. 3. Dans une poêle, faire revenir Lentilles avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Crème et laisser mijoter quelques instants. 6. Mélanger avec Pâtes et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Facile",
+    "prix": "Moyen",
+    "calories": "Faible"
+  },
+  {
+    "id": 160,
+    "titre": "Pâtes au Lentilles et Chou-fleur Épicé",
+    "ingredients": [
+      "pâtes",
+      "lentilles",
+      "chou-fleur",
+      "haricots verts",
+      "moutarde",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Chou-fleur et Haricots verts en morceaux. 2. Faire cuire Pâtes selon les instructions du paquet. 3. Dans une poêle, faire revenir Lentilles avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Moutarde et laisser mijoter quelques instants. 6. Mélanger avec Pâtes et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Moyen",
+    "prix": "Moyen",
+    "calories": "Faible"
+  },
+  {
+    "id": 161,
+    "titre": "Riz au Lentilles et Petits pois Grillé",
+    "ingredients": [
+      "riz",
+      "lentilles",
+      "petits pois",
+      "carottes",
+      "sauce soja",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Petits pois et Carottes en morceaux. 2. Faire cuire Riz selon les instructions du paquet. 3. Dans une poêle, faire revenir Lentilles avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Soja et laisser mijoter quelques instants. 6. Mélanger avec Riz et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Difficile",
+    "prix": "Moyen",
+    "calories": "Faible"
+  },
+  {
+    "id": 162,
+    "titre": "Quinoa au Crevettes et Épinards Grillé",
+    "ingredients": [
+      "quinoa",
+      "crevettes",
+      "épinards",
+      "chou-fleur",
+      "sauce tomate",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Épinards et Chou-fleur en morceaux. 2. Faire cuire Quinoa selon les instructions du paquet. 3. Dans une poêle, faire revenir Crevettes avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Tomate et laisser mijoter quelques instants. 6. Mélanger avec Quinoa et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Facile",
+    "prix": "Cher",
+    "calories": "Faible"
+  },
+  {
+    "id": 163,
+    "titre": "Quinoa au Crevettes et Carottes Léger",
+    "ingredients": [
+      "quinoa",
+      "crevettes",
+      "carottes",
+      "aubergines",
+      "curry",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Carottes et Aubergines en morceaux. 2. Faire cuire Quinoa selon les instructions du paquet. 3. Dans une poêle, faire revenir Crevettes avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Curry et laisser mijoter quelques instants. 6. Mélanger avec Quinoa et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Facile",
+    "prix": "Bon marché",
+    "calories": "Faible"
+  },
+  {
+    "id": 164,
+    "titre": "Quinoa au Thon et Aubergines Épicé",
+    "ingredients": [
+      "quinoa",
+      "thon",
+      "aubergines",
+      "courgettes",
+      "curry",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Aubergines et Courgettes en morceaux. 2. Faire cuire Quinoa selon les instructions du paquet. 3. Dans une poêle, faire revenir Thon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Curry et laisser mijoter quelques instants. 6. Mélanger avec Quinoa et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Moyen",
+    "prix": "Cher",
+    "calories": "Élevé"
+  },
+  {
+    "id": 165,
+    "titre": "Blé au Thon et Brocolis Rôti",
+    "ingredients": [
+      "blé",
+      "thon",
+      "brocolis",
+      "aubergines",
+      "beurre citron",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Brocolis et Aubergines en morceaux. 2. Faire cuire Blé selon les instructions du paquet. 3. Dans une poêle, faire revenir Thon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Beurre Citron et laisser mijoter quelques instants. 6. Mélanger avec Blé et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Moyen",
+    "prix": "Moyen",
+    "calories": "Moyen"
+  },
+  {
+    "id": 166,
+    "titre": "Pommes de terre au Tofu et Aubergines Crémeux",
+    "ingredients": [
+      "pommes de terre",
+      "tofu",
+      "aubergines",
+      "haricots verts",
+      "beurre citron",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Aubergines et Haricots verts en morceaux. 2. Faire cuire Pommes de terre selon les instructions du paquet. 3. Dans une poêle, faire revenir Tofu avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Beurre Citron et laisser mijoter quelques instants. 6. Mélanger avec Pommes de terre et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Facile",
+    "prix": "Moyen",
+    "calories": "Élevé"
+  },
+  {
+    "id": 167,
+    "titre": "Riz au Tofu et Chou-fleur Mijoté",
+    "ingredients": [
+      "riz",
+      "tofu",
+      "chou-fleur",
+      "haricots verts",
+      "sauce soja",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Chou-fleur et Haricots verts en morceaux. 2. Faire cuire Riz selon les instructions du paquet. 3. Dans une poêle, faire revenir Tofu avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Soja et laisser mijoter quelques instants. 6. Mélanger avec Riz et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Difficile",
+    "prix": "Moyen",
+    "calories": "Élevé"
+  },
+  {
+    "id": 168,
+    "titre": "Pâtes au Tofu et Champignons Léger",
+    "ingredients": [
+      "pâtes",
+      "tofu",
+      "champignons",
+      "épinards",
+      "pesto",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Champignons et Épinards en morceaux. 2. Faire cuire Pâtes selon les instructions du paquet. 3. Dans une poêle, faire revenir Tofu avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Pesto et laisser mijoter quelques instants. 6. Mélanger avec Pâtes et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Moyen",
+    "prix": "Bon marché",
+    "calories": "Moyen"
+  },
+  {
+    "id": 169,
+    "titre": "Riz au Saumon et Petits pois Épicé",
+    "ingredients": [
+      "riz",
+      "saumon",
+      "petits pois",
+      "courgettes",
+      "curry",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Petits pois et Courgettes en morceaux. 2. Faire cuire Riz selon les instructions du paquet. 3. Dans une poêle, faire revenir Saumon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Curry et laisser mijoter quelques instants. 6. Mélanger avec Riz et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Facile",
+    "prix": "Moyen",
+    "calories": "Moyen"
+  },
+  {
+    "id": 170,
+    "titre": "Gnocchis au Boeuf et Courgettes Épicé",
+    "ingredients": [
+      "gnocchis",
+      "boeuf",
+      "courgettes",
+      "poivrons",
+      "curry",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Courgettes et Poivrons en morceaux. 2. Faire cuire Gnocchis selon les instructions du paquet. 3. Dans une poêle, faire revenir Boeuf avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Curry et laisser mijoter quelques instants. 6. Mélanger avec Gnocchis et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Difficile",
+    "prix": "Moyen",
+    "calories": "Faible"
+  },
+  {
+    "id": 171,
+    "titre": "Polenta au Tofu et Haricots verts Épicé",
+    "ingredients": [
+      "polenta",
+      "tofu",
+      "haricots verts",
+      "poivrons",
+      "pesto",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Haricots verts et Poivrons en morceaux. 2. Faire cuire Polenta selon les instructions du paquet. 3. Dans une poêle, faire revenir Tofu avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Pesto et laisser mijoter quelques instants. 6. Mélanger avec Polenta et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Facile",
+    "prix": "Bon marché",
+    "calories": "Élevé"
+  },
+  {
+    "id": 172,
+    "titre": "Pâtes au Boeuf et Champignons Léger",
+    "ingredients": [
+      "pâtes",
+      "boeuf",
+      "champignons",
+      "carottes",
+      "lait de coco",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Champignons et Carottes en morceaux. 2. Faire cuire Pâtes selon les instructions du paquet. 3. Dans une poêle, faire revenir Boeuf avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Lait de Coco et laisser mijoter quelques instants. 6. Mélanger avec Pâtes et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Facile",
+    "prix": "Cher",
+    "calories": "Élevé"
+  },
+  {
+    "id": 173,
+    "titre": "Riz au Boeuf et Carottes Mijoté",
+    "ingredients": [
+      "riz",
+      "boeuf",
+      "carottes",
+      "haricots verts",
+      "curry",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Carottes et Haricots verts en morceaux. 2. Faire cuire Riz selon les instructions du paquet. 3. Dans une poêle, faire revenir Boeuf avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Curry et laisser mijoter quelques instants. 6. Mélanger avec Riz et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Difficile",
+    "prix": "Moyen",
+    "calories": "Élevé"
+  },
+  {
+    "id": 174,
+    "titre": "Gnocchis au Crevettes et Carottes Mijoté",
+    "ingredients": [
+      "gnocchis",
+      "crevettes",
+      "carottes",
+      "brocolis",
+      "sauce tomate",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Carottes et Brocolis en morceaux. 2. Faire cuire Gnocchis selon les instructions du paquet. 3. Dans une poêle, faire revenir Crevettes avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Tomate et laisser mijoter quelques instants. 6. Mélanger avec Gnocchis et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Moyen",
+    "prix": "Moyen",
+    "calories": "Faible"
+  },
+  {
+    "id": 175,
+    "titre": "Gnocchis au Haricots Rouges et Chou-fleur Rôti",
+    "ingredients": [
+      "gnocchis",
+      "haricots rouges",
+      "chou-fleur",
+      "petits pois",
+      "lait de coco",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Chou-fleur et Petits pois en morceaux. 2. Faire cuire Gnocchis selon les instructions du paquet. 3. Dans une poêle, faire revenir Haricots Rouges avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Lait de Coco et laisser mijoter quelques instants. 6. Mélanger avec Gnocchis et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Moyen",
+    "prix": "Bon marché",
+    "calories": "Moyen"
+  },
+  {
+    "id": 176,
+    "titre": "Pommes de terre au Thon et Haricots verts Frais",
+    "ingredients": [
+      "pommes de terre",
+      "thon",
+      "haricots verts",
+      "poivrons",
+      "moutarde",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Haricots verts et Poivrons en morceaux. 2. Faire cuire Pommes de terre selon les instructions du paquet. 3. Dans une poêle, faire revenir Thon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Moutarde et laisser mijoter quelques instants. 6. Mélanger avec Pommes de terre et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Difficile",
+    "prix": "Bon marché",
+    "calories": "Moyen"
+  },
+  {
+    "id": 177,
+    "titre": "Gnocchis au Porc et Brocolis Grillé",
+    "ingredients": [
+      "gnocchis",
+      "porc",
+      "brocolis",
+      "haricots verts",
+      "huile d'olive",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Brocolis et Haricots verts en morceaux. 2. Faire cuire Gnocchis selon les instructions du paquet. 3. Dans une poêle, faire revenir Porc avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Huile d'olive et laisser mijoter quelques instants. 6. Mélanger avec Gnocchis et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Moyen",
+    "prix": "Moyen",
+    "calories": "Faible"
+  },
+  {
+    "id": 178,
+    "titre": "Polenta au Boeuf et Petits pois Rôti",
+    "ingredients": [
+      "polenta",
+      "boeuf",
+      "petits pois",
+      "champignons",
+      "sauce tomate",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Petits pois et Champignons en morceaux. 2. Faire cuire Polenta selon les instructions du paquet. 3. Dans une poêle, faire revenir Boeuf avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Tomate et laisser mijoter quelques instants. 6. Mélanger avec Polenta et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Difficile",
+    "prix": "Moyen",
+    "calories": "Élevé"
+  },
+  {
+    "id": 179,
+    "titre": "Polenta au Tofu et Chou-fleur Épicé",
+    "ingredients": [
+      "polenta",
+      "tofu",
+      "chou-fleur",
+      "petits pois",
+      "sauce tomate",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Chou-fleur et Petits pois en morceaux. 2. Faire cuire Polenta selon les instructions du paquet. 3. Dans une poêle, faire revenir Tofu avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Tomate et laisser mijoter quelques instants. 6. Mélanger avec Polenta et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Moyen",
+    "prix": "Bon marché",
+    "calories": "Élevé"
+  },
+  {
+    "id": 180,
+    "titre": "Pommes de terre au Haricots Rouges et Épinards Grillé",
+    "ingredients": [
+      "pommes de terre",
+      "haricots rouges",
+      "épinards",
+      "champignons",
+      "pesto",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Épinards et Champignons en morceaux. 2. Faire cuire Pommes de terre selon les instructions du paquet. 3. Dans une poêle, faire revenir Haricots Rouges avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Pesto et laisser mijoter quelques instants. 6. Mélanger avec Pommes de terre et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Facile",
+    "prix": "Bon marché",
+    "calories": "Moyen"
+  },
+  {
+    "id": 181,
+    "titre": "Quinoa au Haricots Rouges et Poivrons Sauté",
+    "ingredients": [
+      "quinoa",
+      "haricots rouges",
+      "poivrons",
+      "aubergines",
+      "curry",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Poivrons et Aubergines en morceaux. 2. Faire cuire Quinoa selon les instructions du paquet. 3. Dans une poêle, faire revenir Haricots Rouges avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Curry et laisser mijoter quelques instants. 6. Mélanger avec Quinoa et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Facile",
+    "prix": "Bon marché",
+    "calories": "Moyen"
+  },
+  {
+    "id": 182,
+    "titre": "Pâtes au Haricots Rouges et Carottes Mijoté",
+    "ingredients": [
+      "pâtes",
+      "haricots rouges",
+      "carottes",
+      "épinards",
+      "moutarde",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Carottes et Épinards en morceaux. 2. Faire cuire Pâtes selon les instructions du paquet. 3. Dans une poêle, faire revenir Haricots Rouges avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Moutarde et laisser mijoter quelques instants. 6. Mélanger avec Pâtes et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Difficile",
+    "prix": "Cher",
+    "calories": "Élevé"
+  },
+  {
+    "id": 183,
+    "titre": "Blé au Saumon et Champignons Épicé",
+    "ingredients": [
+      "blé",
+      "saumon",
+      "champignons",
+      "courgettes",
+      "lait de coco",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Champignons et Courgettes en morceaux. 2. Faire cuire Blé selon les instructions du paquet. 3. Dans une poêle, faire revenir Saumon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Lait de Coco et laisser mijoter quelques instants. 6. Mélanger avec Blé et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Difficile",
+    "prix": "Bon marché",
+    "calories": "Élevé"
+  },
+  {
+    "id": 184,
+    "titre": "Semoule au Saumon et Épinards Grillé",
+    "ingredients": [
+      "semoule",
+      "saumon",
+      "épinards",
+      "carottes",
+      "sauce soja",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Épinards et Carottes en morceaux. 2. Faire cuire Semoule selon les instructions du paquet. 3. Dans une poêle, faire revenir Saumon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Soja et laisser mijoter quelques instants. 6. Mélanger avec Semoule et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Moyen",
+    "prix": "Cher",
+    "calories": "Faible"
+  },
+  {
+    "id": 185,
+    "titre": "Polenta au Tofu et Poivrons Gourmand",
+    "ingredients": [
+      "polenta",
+      "tofu",
+      "poivrons",
+      "champignons",
+      "sauce tomate",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Poivrons et Champignons en morceaux. 2. Faire cuire Polenta selon les instructions du paquet. 3. Dans une poêle, faire revenir Tofu avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Tomate et laisser mijoter quelques instants. 6. Mélanger avec Polenta et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Moyen",
+    "prix": "Cher",
+    "calories": "Élevé"
+  },
+  {
+    "id": 186,
+    "titre": "Pâtes au Haricots Rouges et Carottes Frais",
+    "ingredients": [
+      "pâtes",
+      "haricots rouges",
+      "carottes",
+      "petits pois",
+      "curry",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Carottes et Petits pois en morceaux. 2. Faire cuire Pâtes selon les instructions du paquet. 3. Dans une poêle, faire revenir Haricots Rouges avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Curry et laisser mijoter quelques instants. 6. Mélanger avec Pâtes et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Moyen",
+    "prix": "Moyen",
+    "calories": "Élevé"
+  },
+  {
+    "id": 187,
+    "titre": "Polenta au Oeufs et Poivrons Épicé",
+    "ingredients": [
+      "polenta",
+      "oeufs",
+      "poivrons",
+      "courgettes",
+      "beurre citron",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Poivrons et Courgettes en morceaux. 2. Faire cuire Polenta selon les instructions du paquet. 3. Dans une poêle, faire revenir Oeufs avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Beurre Citron et laisser mijoter quelques instants. 6. Mélanger avec Polenta et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Moyen",
+    "prix": "Cher",
+    "calories": "Élevé"
+  },
+  {
+    "id": 188,
+    "titre": "Polenta au Haricots Rouges et Courgettes Gourmand",
+    "ingredients": [
+      "polenta",
+      "haricots rouges",
+      "courgettes",
+      "épinards",
+      "sauce tomate",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Courgettes et Épinards en morceaux. 2. Faire cuire Polenta selon les instructions du paquet. 3. Dans une poêle, faire revenir Haricots Rouges avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Tomate et laisser mijoter quelques instants. 6. Mélanger avec Polenta et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Difficile",
+    "prix": "Bon marché",
+    "calories": "Moyen"
+  },
+  {
+    "id": 189,
+    "titre": "Quinoa au Poulet et Aubergines Rôti",
+    "ingredients": [
+      "quinoa",
+      "poulet",
+      "aubergines",
+      "champignons",
+      "sauce soja",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Aubergines et Champignons en morceaux. 2. Faire cuire Quinoa selon les instructions du paquet. 3. Dans une poêle, faire revenir Poulet avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Soja et laisser mijoter quelques instants. 6. Mélanger avec Quinoa et servir chaud.",
+    "temps": "30m",
+    "difficulte": "Difficile",
+    "prix": "Cher",
+    "calories": "Moyen"
+  },
+  {
+    "id": 190,
+    "titre": "Riz au Porc et Chou-fleur Grillé",
+    "ingredients": [
+      "riz",
+      "porc",
+      "chou-fleur",
+      "aubergines",
+      "pesto",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Chou-fleur et Aubergines en morceaux. 2. Faire cuire Riz selon les instructions du paquet. 3. Dans une poêle, faire revenir Porc avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Pesto et laisser mijoter quelques instants. 6. Mélanger avec Riz et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Moyen",
+    "prix": "Moyen",
+    "calories": "Moyen"
+  },
+  {
+    "id": 191,
+    "titre": "Pommes de terre au Haricots Rouges et Champignons Rôti",
+    "ingredients": [
+      "pommes de terre",
+      "haricots rouges",
+      "champignons",
+      "petits pois",
+      "huile d'olive",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Champignons et Petits pois en morceaux. 2. Faire cuire Pommes de terre selon les instructions du paquet. 3. Dans une poêle, faire revenir Haricots Rouges avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Huile d'olive et laisser mijoter quelques instants. 6. Mélanger avec Pommes de terre et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Moyen",
+    "prix": "Cher",
+    "calories": "Élevé"
+  },
+  {
+    "id": 192,
+    "titre": "Semoule au Lentilles et Courgettes Léger",
+    "ingredients": [
+      "semoule",
+      "lentilles",
+      "courgettes",
+      "épinards",
+      "huile d'olive",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Courgettes et Épinards en morceaux. 2. Faire cuire Semoule selon les instructions du paquet. 3. Dans une poêle, faire revenir Lentilles avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Huile d'olive et laisser mijoter quelques instants. 6. Mélanger avec Semoule et servir chaud.",
+    "temps": "45m",
+    "difficulte": "Moyen",
+    "prix": "Moyen",
+    "calories": "Moyen"
+  },
+  {
+    "id": 193,
+    "titre": "Pâtes au Haricots Rouges et Carottes Frais",
+    "ingredients": [
+      "pâtes",
+      "haricots rouges",
+      "carottes",
+      "courgettes",
+      "lait de coco",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Carottes et Courgettes en morceaux. 2. Faire cuire Pâtes selon les instructions du paquet. 3. Dans une poêle, faire revenir Haricots Rouges avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Lait de Coco et laisser mijoter quelques instants. 6. Mélanger avec Pâtes et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Facile",
+    "prix": "Cher",
+    "calories": "Élevé"
+  },
+  {
+    "id": 194,
+    "titre": "Pâtes au Haricots Rouges et Poivrons Léger",
+    "ingredients": [
+      "pâtes",
+      "haricots rouges",
+      "poivrons",
+      "chou-fleur",
+      "moutarde",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Poivrons et Chou-fleur en morceaux. 2. Faire cuire Pâtes selon les instructions du paquet. 3. Dans une poêle, faire revenir Haricots Rouges avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Moutarde et laisser mijoter quelques instants. 6. Mélanger avec Pâtes et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Difficile",
+    "prix": "Bon marché",
+    "calories": "Moyen"
+  },
+  {
+    "id": 195,
+    "titre": "Quinoa au Thon et Brocolis Express",
+    "ingredients": [
+      "quinoa",
+      "thon",
+      "brocolis",
+      "chou-fleur",
+      "sauce tomate",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Brocolis et Chou-fleur en morceaux. 2. Faire cuire Quinoa selon les instructions du paquet. 3. Dans une poêle, faire revenir Thon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Tomate et laisser mijoter quelques instants. 6. Mélanger avec Quinoa et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Facile",
+    "prix": "Bon marché",
+    "calories": "Moyen"
+  },
+  {
+    "id": 196,
+    "titre": "Pommes de terre au Saumon et Carottes Rôti",
+    "ingredients": [
+      "pommes de terre",
+      "saumon",
+      "carottes",
+      "petits pois",
+      "crème",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Carottes et Petits pois en morceaux. 2. Faire cuire Pommes de terre selon les instructions du paquet. 3. Dans une poêle, faire revenir Saumon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Crème et laisser mijoter quelques instants. 6. Mélanger avec Pommes de terre et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Difficile",
+    "prix": "Cher",
+    "calories": "Faible"
+  },
+  {
+    "id": 197,
+    "titre": "Polenta au Saumon et Brocolis Léger",
+    "ingredients": [
+      "polenta",
+      "saumon",
+      "brocolis",
+      "carottes",
+      "pesto",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Brocolis et Carottes en morceaux. 2. Faire cuire Polenta selon les instructions du paquet. 3. Dans une poêle, faire revenir Saumon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Pesto et laisser mijoter quelques instants. 6. Mélanger avec Polenta et servir chaud.",
+    "temps": "1h",
+    "difficulte": "Facile",
+    "prix": "Bon marché",
+    "calories": "Élevé"
+  },
+  {
+    "id": 198,
+    "titre": "Riz au Tofu et Petits pois Rôti",
+    "ingredients": [
+      "riz",
+      "tofu",
+      "petits pois",
+      "brocolis",
+      "sauce soja",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Petits pois et Brocolis en morceaux. 2. Faire cuire Riz selon les instructions du paquet. 3. Dans une poêle, faire revenir Tofu avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Sauce Soja et laisser mijoter quelques instants. 6. Mélanger avec Riz et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Facile",
+    "prix": "Moyen",
+    "calories": "Faible"
+  },
+  {
+    "id": 199,
+    "titre": "Semoule au Thon et Petits pois Frais",
+    "ingredients": [
+      "semoule",
+      "thon",
+      "petits pois",
+      "épinards",
+      "huile d'olive",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Petits pois et Épinards en morceaux. 2. Faire cuire Semoule selon les instructions du paquet. 3. Dans une poêle, faire revenir Thon avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Huile d'olive et laisser mijoter quelques instants. 6. Mélanger avec Semoule et servir chaud.",
+    "temps": "15m",
+    "difficulte": "Difficile",
+    "prix": "Bon marché",
+    "calories": "Moyen"
+  },
+  {
+    "id": 200,
+    "titre": "Blé au Haricots Rouges et Petits pois Léger",
+    "ingredients": [
+      "blé",
+      "haricots rouges",
+      "petits pois",
+      "épinards",
+      "pesto",
+      "oignon",
+      "ail",
+      "sel",
+      "poivre"
+    ],
+    "instructions": "1. Préparer les ingrédients : couper Petits pois et Épinards en morceaux. 2. Faire cuire Blé selon les instructions du paquet. 3. Dans une poêle, faire revenir Haricots Rouges avec un peu d'huile. 4. Ajouter les légumes et faire sauter 5-10 minutes. 5. Verser Pesto et laisser mijoter quelques instants. 6. Mélanger avec Blé et servir chaud.",
+    "temps": "20m",
+    "difficulte": "Facile",
+    "prix": "Moyen",
+    "calories": "Faible"
+  }
+]

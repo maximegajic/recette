@@ -3,5 +3,6 @@ transformers
 sentence-transformers
 faiss-cpu
 numpy
-pandas
+datasets
 accelerate
+pandas

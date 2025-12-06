@@ -9,52 +9,71 @@ class RAGGenerator:
         
         try:
             self.tokenizer = AutoTokenizer.from_pretrained(self.model_path)
+            
             self.model = AutoModelForCausalLM.from_pretrained(
                 self.model_path, 
-                torch_dtype=torch.float16 if self.device == "cuda" else torch.float32,
+                torch_dtype=torch.bfloat16 if self.device == "cuda" else torch.float32, 
                 device_map="auto" if self.device == "cuda" else None
             )
-            if self.device == "cpu":
-                self.model.to("cpu")
-                
+            
         except OSError:
-            print("⚠️ Modèle local non trouvé. Lancez download_model.py ou vérifiez le chemin.")
+            print("⚠️ Modèle local non trouvé. Lancez download_model.py.")
             raise
 
     def generate_response(self, user_query, retrieved_recipes):
-        # 1. Construire le contexte à partir des recettes trouvées
+        # 1. Construire le contexte
         context_text = ""
-        for r in retrieved_recipes:
+        for i, r in enumerate(retrieved_recipes):
             ingredients = ", ".join(r['ingredients'])
-            context_text += f"- Recette: {r['titre']}\n  Ingrédients: {ingredients}\n  Instructions: {r['instructions']}\n\n"
+            context_text += (
+                f"RECETTE #{i+1}:\n"
+                f"  - Titre: {r['titre']}\n"
+                f"  - Ingrédients: {ingredients}\n"
+                f"  - Instructions: {r['instructions']}\n"
+                f"  - Infos: Difficulté {r.get('difficulte', '?')} | Prix {r.get('prix', '?')}\n\n"
+            )
 
-        # 2. Créer le prompt (Format ChatML ou spécifique à TinyLlama/Phi)
-        # Ceci est un prompt générique efficace
-        prompt = f"""<|system|>
-Tu es un assistant culinaire utile. Utilise les recettes ci-dessous pour répondre à la demande de l'utilisateur. 
-Si aucune recette ne correspond, dis-le poliment. Parle en français.
-
-CONTEXTE RECETTES:
-{context_text}
-</s>
-<|user|>
-{user_query}
-</s>
-<|assistant|>"""
-
-        # 3. Tokenizer et Générer
-        inputs = self.tokenizer(prompt, return_tensors="pt").to(self.device)
-        
-        outputs = self.model.generate(
-            **inputs, 
-            max_new_tokens=250, # Limite la longueur de la réponse
-            temperature=0.7,    # Créativité
-            do_sample=True
+        # 2. Prompt "Chef Malin"
+        # On insiste sur le fait qu'une recette contient les ingrédients PARMI D'AUTRES.
+        system_prompt = (
+            "Tu es un assistant culinaire utile et direct. "
+            "Tu as une liste de recettes numérotées. "
+            
+            "RÈGLES D'ANALYSE :"
+            "1. Si l'utilisateur donne des INGRÉDIENTS : "
+            "   - Cherche dans la liste les recettes qui CONTIENNENT ces ingrédients (même s'il y en a d'autres !). "
+            "   - Ensuite, donne la recette complète qui correspond le mieux."
+            
+            "2. Si l'utilisateur demande un PLAT (ex: 'Pizza') : "
+            "   - Donne la recette complète."
+            
+            "3. Sois concis et ne t'excuse pas inutilement."
         )
 
-        response = self.tokenizer.decode(outputs[0], skip_special_tokens=True)
-        
-        # Nettoyage pour ne garder que la réponse de l'assistant (après <|assistant|>)
-        if "<|assistant|>" in response:
-            return response.split("<|assistant|>")[-1].strip()
-        return response
+        messages = [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": f"RECETTES DISPONIBLES :\n{context_text}\n\nDEMANDE UTILISATEUR : {user_query}"}
+        ]
+
+        text = self.tokenizer.apply_chat_template(
+            messages, 
+            tokenize=False, 
+            add_generation_prompt=True
+        )
+
+        inputs = self.tokenizer([text], return_tensors="pt").to(self.device)
+
+        outputs = self.model.generate(
+            **inputs, 
+            max_new_tokens=400,
+            temperature=0.5,           # Un tout petit peu plus créatif pour faire des liens
+            do_sample=True,
+            top_p=0.9,
+            repetition_penalty=1.1,
+            pad_token_id=self.tokenizer.eos_token_id
+        )
+
+        generated_ids = outputs[0][len(inputs.input_ids[0]):]
+        clean_response = self.tokenizer.decode(generated_ids, skip_special_tokens=True)
+
+        return clean_response.strip()

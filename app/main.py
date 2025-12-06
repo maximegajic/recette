@@ -33,7 +33,7 @@ def main():
 
         # A. Retrieval (Recherche)
         print("   🔍 Recherche des recettes pertinentes...")
-        recipes = retriever.search(user_input, k=2)
+        recipes = retriever.search(user_input, k=10)
         
         if not recipes:
             print("   ⚠️ Aucune recette trouvée dans la base.")
