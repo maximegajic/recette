@@ -1,21 +1,28 @@
-👨‍🍳 Assistant Recettes RAG (Local)
+👨‍🍳 Assistant Recettes RAG (Qwen 2.5 + Recherche Hybride)
 
-Ce projet est un assistant culinaire intelligent utilisant la technique RAG (Retrieval-Augmented Generation). Il tourne entièrement en local sur votre machine.
+Ce projet est un assistant culinaire avancé utilisant la technique RAG (Retrieval-Augmented Generation).
+Contrairement à un RAG basique, il utilise une Recherche Hybride qui combine la puissance vectorielle (IA) et des filtres logiques (Mots-clés, Synonymes, Exclusions).
 
-🧱 Architecture
+🧠 Architecture Technique
 
-Données : Fichier JSON dans data/recettes.json.
+LLM (Cerveau) : Qwen 2.5 Instruct (Modèle local performant en français).
 
-Indexation : faiss-cpu pour la recherche vectorielle et sentence-transformers pour les embeddings.
+Embedding (Yeux) : paraphrase-multilingual-mpnet-base-v2 (Compréhension sémantique fine).
 
-LLM : Utilise un petit modèle (TinyLlama ou Phi-2) via transformers.
+Moteur de Recherche :
+
+FAISS pour la recherche vectorielle rapide.
+
+Re-ranking Python pour gérer les ingrédients obligatoires, les exclusions ("sans oeufs") et les synonymes ("vite" = "15m").
+
+Données : Dataset de ~5000 vraies recettes françaises (importé via Hugging Face).
 
 🚀 Installation
 
 Cloner le projet
 
-git clone <url_du_repo>
-cd mon_rag
+git clone https://github.com/maximegajic/recette.git
+cd recette
 
 
 Installer les dépendances
@@ -23,39 +30,68 @@ Installer les dépendances
 pip install -r requirements.txt
 
 
-Télécharger les modèles (À faire une seule fois)
-Cela va télécharger le LLM et le modèle d'embedding dans le dossier ./models.
+Télécharger les modèles (1x)
+Attention : Télécharge environ 7 à 15 Go de données selon la version choisie.
 
 python download_model.py
 
 
-Indexer les recettes
-Génère la base de données vectorielle à partir de recettes.json.
+Générer les données (1x)
+Crée le fichier data/recettes.json à partir du script de génération.
 
-python -m app.indexer
-
-
-🎮 Lancer l'assistant
-
-python -m app.main
+python generate_dataset.py
 
 
-📂 Structure
+Créer l'index (1x)
+Transforme les recettes en vecteurs mathématiques.
 
-data/ : Contient vos recettes et l'index généré.
+python app/indexer.py
 
-models/ : Contient les modèles téléchargés (non inclus dans git).
 
-app/ :
+🎮 Utilisation
 
-indexer.py : Crée la base de données.
+Pour lancer l'assistant :
 
-retriever.py : Cherche les informations.
+python app/main.py
 
-generator.py : Gère le LLM.
 
-main.py : L'interface utilisateur.
+💡 Conseils pour de meilleurs résultats
 
-💡 Personnalisation
+Le système analyse vos mots-clés. Pour une précision maximale, évitez les phrases longues et allez à l'essentiel.
 
-Ajoutez vos propres recettes dans data/recettes.json et relancez python -m app.indexer !
+Par plat : "quiche lorraine" (Plutôt que "Je voudrais une quiche...")
+
+Par ingrédients : "boeuf carottes"
+
+Avec contraintes (Synonymes) : "rapide pas cher" (Comprend "15m" et "Bon marché")
+
+⚠️ Règle importante pour les exclusions ("SANS")
+
+Le mot-clé sans agit comme une barrière. Tout ce qui est écrit APRÈS ce mot sera banni des résultats.
+Il faut donc toujours formuler votre requête ainsi : [Ce que je veux] sans [Ce que j'interdis].
+
+✅ Correct : "gâteau chocolat sans oeufs"
+
+❌ Incorrect : "sans oeufs gâteau chocolat" (Cela bannirait le gâteau et le chocolat !)
+
+
+📂 Structure du projet
+
+app/ : Code source de l'application.
+
+indexer.py : Création de la base vectorielle.
+
+retriever.py : Moteur de recherche hybride (Synonymes, Accents, Filtres).
+
+generate.py : Gestion du LLM (Qwen).
+
+main.py : Point d'entrée.
+
+data/ : Stockage (JSON des recettes + Index FAISS).
+
+models/ : Modèles IA (non inclus dans git).
+
+download_model.py : Script d'installation des modèles.
+
+generate_dataset.py : Script de génération des recettes.
+
